@@ -1,0 +1,28 @@
+{
+  "count": 28,
+  "total_time_spent": 853.1666666666667,
+  "by_project": {
+    "CPM": 24.0,
+    "NBSSPORTAL": 163.0,
+    "PSCPSC": 59.5,
+    "TUDS": 606.6666666666666
+  },
+  "task_statuses": {
+    "Open": 19,
+    "Review": 6,
+    "Review Done": 2,
+    "Reopened": 1
+  },
+  "sample_tasks": [
+    "TUDS-2753",
+    "TUDS-2737",
+    "TUDS-2732",
+    "TUDS-2684",
+    "TUDS-2679",
+    "TUDS-2616",
+    "TUDS-2602",
+    "TUDS-2578",
+    "TUDS-2577",
+    "TUDS-2572"
+  ]
+}
