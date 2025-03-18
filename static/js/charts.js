@@ -244,6 +244,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Создаем пустой график, который будет обновляться
                 let comparisonChart = null;
+                // Храним текущие отображаемые проекты для использования в обработчике кликов
+                let currentDisplayProjects = [];
 
                 // Функция для обновления данных графика на основе выбранных проектов
                 function updateChart() {
@@ -252,6 +254,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     // Ограничиваем количество проектов для читаемости (можно увеличить)
                     const displayProjects = filteredProjects.slice(0, 15);
+
+                    // Обновляем список текущих отображаемых проектов для обработчика кликов
+                    currentDisplayProjects = [...displayProjects];
 
                     const estimateData = displayProjects.map(project => chartData.project_estimates[project] || 0);
                     const timeSpentData = displayProjects.map(project => chartData.project_time_spent[project] || 0);
@@ -291,7 +296,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                     if (activeElements.length === 0) return;
 
                                     const index = activeElements[0].index;
-                                    const project = displayProjects[index];
+                                    // Важно: используем currentDisplayProjects вместо фиксированного имени проекта
+                                    const project = currentDisplayProjects[index];
                                     console.log(`Chart click: comparison, Project: ${project}`);
 
                                     if (typeof createJiraLink === 'function') {
