@@ -120,10 +120,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
 
-        // Comparison chart (estimate vs. time spent)
+        // Comparison chart (estimate vs. time spent) с возможностью фильтрации
         const ctxComparison = document.getElementById('comparisonChart');
         if (ctxComparison && chartData.project_estimates && chartData.project_time_spent) {
-            console.log("Initializing comparison chart");
+            console.log("Initializing comparison chart with filtering");
+
             // Collect all unique projects
             const allProjects = [...new Set([
                 ...Object.keys(chartData.project_estimates),
@@ -138,44 +139,174 @@ document.addEventListener('DOMContentLoaded', function() {
                     return bTotal - aTotal;
                 });
 
-                // Limit number of projects for readability
-                const topProjects = allProjects.slice(0, 10);
+                // Сохраняем полный список проектов для использования при фильтрации
+                const fullProjectsList = [...allProjects];
 
-                const estimateData = topProjects.map(project => chartData.project_estimates[project] || 0);
-                const timeSpentData = topProjects.map(project => chartData.project_time_spent[project] || 0);
+                // Инициализация состояния исключенных проектов
+                let excludedProjects = new Set();
 
-                try {
-                    const comparisonChart = new Chart(ctxComparison.getContext('2d'), {
-                        type: 'bar',
-                        data: {
-                            labels: topProjects,
-                            datasets: [
-                                {
-                                    label: 'Исходная оценка (часы)',
-                                    data: estimateData,
-                                    backgroundColor: 'rgba(54, 162, 235, 0.7)',
-                                    borderColor: 'rgba(54, 162, 235, 1)',
-                                    borderWidth: 1
-                                },
-                                {
-                                    label: 'Затраченное время (часы)',
-                                    data: timeSpentData,
-                                    backgroundColor: 'rgba(255, 99, 132, 0.7)',
-                                    borderColor: 'rgba(255, 99, 132, 1)',
-                                    borderWidth: 1
-                                }
-                            ]
-                        },
-                        options: {
-                            ...commonOptions,
-                            onClick: (event, activeElements) => {
-                                handleChartClick(event, 'comparison', activeElements, comparisonChart);
-                            }
-                        }
-                    });
-                } catch (err) {
-                    console.error("Error creating comparison chart:", err);
+                // Создаем контейнер для элементов фильтрации над графиком
+                const chartContainer = ctxComparison.closest('.chart-container');
+                const filterContainer = document.createElement('div');
+                filterContainer.className = 'mb-3 chart-filter-container';
+                filterContainer.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <button class="btn btn-sm btn-outline-primary toggle-filter-btn">Показать/скрыть фильтр</button>
+                        <div class="filter-actions" style="display: none;">
+                            <button class="btn btn-sm btn-outline-success select-all-btn">Выбрать все</button>
+                            <button class="btn btn-sm btn-outline-danger deselect-all-btn">Снять все</button>
+                            <button class="btn btn-sm btn-outline-warning reset-filter-btn">Сбросить</button>
+                        </div>
+                    </div>
+                    <div class="project-filter-options" style="display: none; max-height: 200px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; border-radius: 4px;">
+                    </div>
+                `;
+
+                if (chartContainer && chartContainer.parentNode) {
+                    chartContainer.parentNode.insertBefore(filterContainer, chartContainer);
+                } else {
+                    ctxComparison.parentNode.insertBefore(filterContainer, ctxComparison);
                 }
+
+                // Добавляем чекбоксы для проектов
+                const filterOptions = filterContainer.querySelector('.project-filter-options');
+
+                function populateFilterOptions() {
+                    filterOptions.innerHTML = ''; // Очищаем содержимое
+
+                    // Создаем чекбоксы для проектов
+                    fullProjectsList.forEach((project, index) => {
+                        const isExcluded = excludedProjects.has(project);
+                        const rowDiv = document.createElement('div');
+                        rowDiv.className = 'form-check';
+                        rowDiv.innerHTML = `
+                            <input class="form-check-input project-checkbox" type="checkbox" value="${project}" id="project-${index}" ${isExcluded ? '' : 'checked'}>
+                            <label class="form-check-label" for="project-${index}">${project}</label>
+                        `;
+                        filterOptions.appendChild(rowDiv);
+                    });
+
+                    // Добавляем обработчики событий для чекбоксов
+                    const checkboxes = filterOptions.querySelectorAll('.project-checkbox');
+                    checkboxes.forEach(checkbox => {
+                        checkbox.addEventListener('change', function() {
+                            const project = this.value;
+                            if (this.checked) {
+                                excludedProjects.delete(project);
+                            } else {
+                                excludedProjects.add(project);
+                            }
+                            updateChart();
+                        });
+                    });
+                }
+
+                // Заполняем опции фильтра
+                populateFilterOptions();
+
+                // Обработчики для кнопок фильтра
+                const toggleFilterBtn = filterContainer.querySelector('.toggle-filter-btn');
+                const filterActions = filterContainer.querySelector('.filter-actions');
+                const selectAllBtn = filterContainer.querySelector('.select-all-btn');
+                const deselectAllBtn = filterContainer.querySelector('.deselect-all-btn');
+                const resetFilterBtn = filterContainer.querySelector('.reset-filter-btn');
+
+                toggleFilterBtn.addEventListener('click', function() {
+                    const filterOptions = filterContainer.querySelector('.project-filter-options');
+                    const isVisible = filterOptions.style.display !== 'none';
+                    filterOptions.style.display = isVisible ? 'none' : 'block';
+                    filterActions.style.display = isVisible ? 'none' : 'flex';
+                });
+
+                selectAllBtn.addEventListener('click', function() {
+                    const checkboxes = filterOptions.querySelectorAll('.project-checkbox');
+                    checkboxes.forEach(checkbox => {
+                        checkbox.checked = true;
+                    });
+                    excludedProjects.clear();
+                    updateChart();
+                });
+
+                deselectAllBtn.addEventListener('click', function() {
+                    const checkboxes = filterOptions.querySelectorAll('.project-checkbox');
+                    checkboxes.forEach(checkbox => {
+                        checkbox.checked = false;
+                    });
+                    excludedProjects = new Set(fullProjectsList);
+                    updateChart();
+                });
+
+                resetFilterBtn.addEventListener('click', function() {
+                    excludedProjects.clear();
+                    populateFilterOptions();
+                    updateChart();
+                });
+
+                // Создаем пустой график, который будет обновляться
+                let comparisonChart = null;
+
+                // Функция для обновления данных графика на основе выбранных проектов
+                function updateChart() {
+                    // Фильтруем проекты, исключая те, что отмечены для исключения
+                    const filteredProjects = fullProjectsList.filter(project => !excludedProjects.has(project));
+
+                    // Ограничиваем количество проектов для читаемости (можно увеличить)
+                    const displayProjects = filteredProjects.slice(0, 15);
+
+                    const estimateData = displayProjects.map(project => chartData.project_estimates[project] || 0);
+                    const timeSpentData = displayProjects.map(project => chartData.project_time_spent[project] || 0);
+
+                    // Если график уже существует, обновляем его данные
+                    if (comparisonChart) {
+                        comparisonChart.data.labels = displayProjects;
+                        comparisonChart.data.datasets[0].data = estimateData;
+                        comparisonChart.data.datasets[1].data = timeSpentData;
+                        comparisonChart.update();
+                    } else {
+                        // Создаем новый график
+                        comparisonChart = new Chart(ctxComparison.getContext('2d'), {
+                            type: 'bar',
+                            data: {
+                                labels: displayProjects,
+                                datasets: [
+                                    {
+                                        label: 'Исходная оценка (часы)',
+                                        data: estimateData,
+                                        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                                        borderColor: 'rgba(54, 162, 235, 1)',
+                                        borderWidth: 1
+                                    },
+                                    {
+                                        label: 'Затраченное время (часы)',
+                                        data: timeSpentData,
+                                        backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                                        borderColor: 'rgba(255, 99, 132, 1)',
+                                        borderWidth: 1
+                                    }
+                                ]
+                            },
+                            options: {
+                                ...commonOptions,
+                                onClick: (event, activeElements) => {
+                                    if (activeElements.length === 0) return;
+
+                                    const index = activeElements[0].index;
+                                    const project = displayProjects[index];
+                                    console.log(`Chart click: comparison, Project: ${project}`);
+
+                                    if (typeof createJiraLink === 'function') {
+                                        createJiraLink(project);
+                                    } else {
+                                        console.error("createJiraLink function not found");
+                                    }
+                                }
+                            }
+                        });
+                    }
+                }
+
+                // Инициализируем график с полным набором данных
+                updateChart();
             } else {
                 console.log("No projects with estimates or time spent");
             }

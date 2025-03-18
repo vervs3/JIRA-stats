@@ -106,3 +106,45 @@
     justify-content: space-between;
     align-items: center;
 }
+
+/* Стили для контейнера фильтра */
+.chart-filter-container {
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Стили для списка опций фильтра */
+.project-filter-options {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+/* Стили для действий фильтра */
+.filter-actions {
+    gap: 5px;
+}
+
+/* Стили для чекбоксов проектов */
+.project-filter-options .form-check {
+    margin-bottom: 5px;
+}
+
+/* Стили для чекбоксов */
+.project-checkbox {
+    cursor: pointer;
+}
+
+/* Стили для меток чекбоксов */
+.form-check-label {
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Стили для кнопки переключения фильтра */
+.toggle-filter-btn {
+    margin-bottom: 5px;
+}
