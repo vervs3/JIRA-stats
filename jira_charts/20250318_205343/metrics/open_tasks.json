@@ -1,0 +1,25 @@
+{
+  "count": 25,
+  "total_time_spent": 593.1666666666667,
+  "by_project": {
+    "CSM": 21.0,
+    "NBSSPORTAL": 44.0,
+    "TUDS": 528.1666666666666
+  },
+  "task_statuses": {
+    "Open": 24,
+    "Reopened": 1
+  },
+  "sample_tasks": [
+    "TUDS-2737",
+    "TUDS-2684",
+    "TUDS-2616",
+    "TUDS-2602",
+    "TUDS-2572",
+    "TUDS-2481",
+    "TUDS-2476",
+    "TUDS-2453",
+    "TUDS-2418",
+    "TUDS-2396"
+  ]
+}

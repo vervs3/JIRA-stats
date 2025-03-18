@@ -1,3 +1,7 @@
+# Установка бэкенда, который не использует GUI
+import matplotlib
+matplotlib.use('Agg')  # Важно установить до любых других импортов matplotlib
+
 import os
 import json
 import pandas as pd

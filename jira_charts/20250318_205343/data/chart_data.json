@@ -1,0 +1,70 @@
+{
+    "project_counts": {
+        "TUDS": 113,
+        "NBSSPORTAL": 29,
+        "CSM": 16,
+        "SSO": 2,
+        "LIS": 2,
+        "PSCPSC": 1,
+        "CPM": 1,
+        "APC": 1
+    },
+    "project_estimates": {
+        "APC": 8.0,
+        "CPM": 16.0,
+        "CSM": 171.0,
+        "LIS": 160.0,
+        "NBSSPORTAL": 2384.0,
+        "PSCPSC": 80.0,
+        "SSO": 360.0,
+        "TUDS": 4300.0
+    },
+    "project_time_spent": {
+        "APC": 9.0,
+        "CPM": 24.0,
+        "CSM": 246.0,
+        "LIS": 105.0,
+        "NBSSPORTAL": 1907.0,
+        "PSCPSC": 59.5,
+        "SSO": 349.0,
+        "TUDS": 4741.746666666667
+    },
+    "projects": [
+        "NBSSPORTAL",
+        "TUDS",
+        "PSCPSC",
+        "SSO",
+        "CSM",
+        "APC",
+        "LIS",
+        "CPM"
+    ],
+    "filter_params": {
+        "filter_id": "114476",
+        "jql": null,
+        "date_from": "2025-02-16",
+        "date_to": "2025-03-18"
+    },
+    "special_charts": {
+        "no_transitions": {
+            "title": "Открытые задачи со списаниями",
+            "by_project": {
+                "CSM": 3,
+                "NBSSPORTAL": 2,
+                "TUDS": 17
+            },
+            "total": 22
+        },
+        "closed_no_comments": {
+            "title": "Закрытые задачи без комментариев/вложений",
+            "by_project": {
+                "APC": 1,
+                "CSM": 6,
+                "NBSSPORTAL": 2,
+                "SSO": 1,
+                "TUDS": 22
+            },
+            "total": 32
+        }
+    }
+}

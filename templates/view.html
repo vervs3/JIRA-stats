@@ -98,37 +98,10 @@
                                         {% if data.summary.no_transitions_tasks_count is defined %}
                                         <tr>
                                             <th>
-                                                Задачи без transitions (вероятно новые):
+                                                Открытые задачи со списаниями:
                                                 <i class="bi bi-info-circle metric-info" data-bs-toggle="tooltip" title="{{ data.tooltips.no_transitions_tasks_count }}">ⓘ</i>
                                             </th>
                                             <td>{{ data.summary.no_transitions_tasks_count }}</td>
-                                        </tr>
-                                        {% endif %}
-                                        {% if data.summary.open_tasks_count is defined %}
-                                        <tr>
-                                            <th>
-                                                Открытые задачи с логированием времени:
-                                                <i class="bi bi-info-circle metric-info" data-bs-toggle="tooltip" title="Количество задач в статусе Open, на которые списано время за указанный период">ⓘ</i>
-                                            </th>
-                                            <td>{{ data.summary.open_tasks_count }}</td>
-                                        </tr>
-                                        {% endif %}
-                                        {% if data.summary.open_tasks_time_spent_hours is defined %}
-                                        <tr>
-                                            <th>
-                                                Затраченное время на открытые задачи (часы):
-                                                <i class="bi bi-info-circle metric-info" data-bs-toggle="tooltip" title="Суммарное время, списанное на задачи в статусе Open">ⓘ</i>
-                                            </th>
-                                            <td>{% if data.summary.open_tasks_time_spent_hours %}{{ "%.2f"|format(data.summary.open_tasks_time_spent_hours|float) }}{% else %}0.00{% endif %}</td>
-                                        </tr>
-                                        {% endif %}
-                                        {% if data.summary.completed_tasks_no_comments_count is defined %}
-                                        <tr>
-                                            <th>
-                                                Закрытые задачи без комментариев/вложений:
-                                                <i class="bi bi-info-circle metric-info" data-bs-toggle="tooltip" title="Количество задач в статусах Resolved, Closed или Done, не имеющих комментариев или вложений">ⓘ</i>
-                                            </th>
-                                            <td>{{ data.summary.completed_tasks_no_comments_count }}</td>
                                         </tr>
                                         {% endif %}
                                     </tbody>
@@ -141,207 +114,42 @@
         </div>
     </div>
 
-    <!-- Special charts section -->
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header bg-primary text-white">
-                    <h3 class="mb-0">Специальные графики</h3>
-                </div>
-                <div class="card-body">
-                    <!-- Check for metrics or special charts -->
-                    {% set has_open_tasks = data.charts and 'open_tasks' in data.charts %}
-                    {% set has_no_comments = data.charts and 'completed_tasks_no_comments' in data.charts %}
-                    {% set has_no_transitions = data.charts and 'no_transitions_tasks' in data.charts %}
-                    {% set has_open_tasks_metrics = data.summary and (data.summary.open_tasks_count is defined or data.summary.open_tasks_time_spent_hours is defined) %}
-                    {% set has_no_comments_metrics = data.summary and data.summary.completed_tasks_no_comments_count is defined %}
-                    {% set has_no_transitions_metrics = data.summary and data.summary.no_transitions_tasks_count is defined %}
-                    {% set show_section = has_open_tasks or has_no_comments or has_no_transitions or has_open_tasks_metrics or has_no_comments_metrics or has_no_transitions_metrics %}
-
-                    {% if show_section %}
-                        <div class="row">
-                            <!-- Tasks without transitions (likely new) -->
-                            {% if has_no_transitions or has_no_transitions_metrics or (data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.no_transitions) %}
-                            <div class="col-lg-6 mb-4">
-                                <div class="card h-100 border-info">
-                                    <div class="card-header bg-info text-white">
-                                        <h4>Задачи без transitions (вероятно новые)</h4>
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <p class="text-muted mb-3">Задачи, которые никогда не меняли статус и, вероятно, всё еще находятся в начальном статусе</p>
-
-                                        {% if data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.no_transitions and data.chart_data.special_charts.no_transitions.total > 0 %}
-                                            <div class="mb-2 small text-muted">Нажмите на столбец графика, чтобы открыть соответствующие задачи в Jira</div>
-                                            <div class="chart-container">
-                                                <div class="chart-canvas-wrapper">
-                                                    <canvas id="noTransitionsChart" class="chart-canvas"></canvas>
-                                                </div>
-                                            </div>
-                                        {% elif has_no_transitions and data.charts.no_transitions_tasks != 'placeholder' %}
-                                            <img src="/charts/{{ data.charts.no_transitions_tasks }}" class="chart-img" alt="Задачи без transitions">
-                                        {% else %}
-                                            <div class="alert alert-info">
-                                                {% if has_no_transitions_metrics and data.summary.no_transitions_tasks_count > 0 %}
-                                                    <p>Визуализация графика недоступна, но найдено {{ data.summary.no_transitions_tasks_count }} задач без transitions.</p>
-                                                {% else %}
-                                                    <p>В анализируемый период задач без transitions не обнаружено.</p>
-                                                {% endif %}
-                                            </div>
-                                        {% endif %}
-                                    </div>
-                                    <div class="card-footer bg-light">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span><strong>Всего задач:</strong>
-                                                {% if data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.no_transitions %}
-                                                    {{ data.chart_data.special_charts.no_transitions.total }}
-                                                {% else %}
-                                                    {{ data.summary.no_transitions_tasks_count if data.summary and data.summary.no_transitions_tasks_count is defined else '0' }}
-                                                {% endif %}
-                                            </span>
-                                            <span class="text-info"><i class="bi bi-info-circle"></i> Возможно, требуют внимания</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endif %}
-
-                            {% if has_open_tasks or has_open_tasks_metrics or (data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.open_tasks) %}
-                            <div class="col-lg-6 mb-4">
-                                <div class="card h-100 border-warning">
-                                    <div class="card-header bg-warning text-dark">
-                                        <h4>Открытые задачи с логированием времени</h4>
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <p class="text-muted mb-3">Задачи в статусе Open, на которые списано время за указанный период</p>
-
-                                        {% if data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.open_tasks and data.chart_data.special_charts.open_tasks.total > 0 %}
-                                            <div class="mb-2 small text-muted">Нажмите на столбец графика, чтобы открыть соответствующие задачи в Jira</div>
-                                            <div class="chart-container">
-                                                <div class="chart-canvas-wrapper">
-                                                    <canvas id="openTasksChart" class="chart-canvas"></canvas>
-                                                </div>
-                                            </div>
-                                        {% elif has_open_tasks and data.charts.open_tasks != 'placeholder' %}
-                                            <img src="/charts/{{ data.charts.open_tasks }}" class="chart-img" alt="Открытые задачи с логированием времени">
-                                        {% else %}
-                                            <div class="alert alert-info">
-                                                {% if has_open_tasks_metrics and data.summary.open_tasks_count > 0 %}
-                                                    <p>Визуализация графика недоступна, но найдено {{ data.summary.open_tasks_count }} открытых задач с логированием времени.</p>
-                                                {% else %}
-                                                    <p>В анализируемый период открытых задач с логированием времени не обнаружено.</p>
-                                                {% endif %}
-                                            </div>
-                                        {% endif %}
-                                    </div>
-                                    <div class="card-footer bg-light">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span><strong>Всего задач:</strong>
-                                                {% if data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.open_tasks %}
-                                                    {{ data.chart_data.special_charts.open_tasks.total }}
-                                                {% else %}
-                                                    {{ data.summary.open_tasks_count if data.summary and data.summary.open_tasks_count is defined else '0' }}
-                                                {% endif %}
-                                            </span>
-                                            <span><strong>Затрачено времени:</strong>
-                                                {% if data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.open_tasks %}
-                                                    {{ "%.2f"|format(data.chart_data.special_charts.open_tasks.total_time) }} ч.
-                                                {% else %}
-                                                    {{ "%.2f"|format(data.summary.open_tasks_time_spent_hours|float) if data.summary and data.summary.open_tasks_time_spent_hours is defined else '0.00' }} ч.
-                                                {% endif %}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endif %}
-
-                            {% if has_no_comments or has_no_comments_metrics or (data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.closed_no_comments) %}
-                            <div class="col-lg-6 mb-4">
-                                <div class="card h-100 border-danger">
-                                    <div class="card-header bg-danger text-white">
-                                        <h4>Закрытые задачи без комментариев/вложений</h4>
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <p class="text-muted mb-3">Задачи в статусах Resolved, Closed или Done, не имеющие комментариев или вложений</p>
-
-                                        {% if data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.closed_no_comments and data.chart_data.special_charts.closed_no_comments.total > 0 %}
-                                            <div class="mb-2 small text-muted">Нажмите на столбец графика, чтобы открыть соответствующие задачи в Jira</div>
-                                            <div class="chart-container">
-                                                <div class="chart-canvas-wrapper">
-                                                    <canvas id="closedTasksChart" class="chart-canvas"></canvas>
-                                                </div>
-                                            </div>
-                                        {% elif has_no_comments and data.charts.completed_tasks_no_comments != 'placeholder' %}
-                                            <img src="/charts/{{ data.charts.completed_tasks_no_comments }}" class="chart-img" alt="Закрытые задачи без комментариев">
-                                        {% else %}
-                                            <div class="alert alert-info">
-                                                {% if has_no_comments_metrics and data.summary.completed_tasks_no_comments_count > 0 %}
-                                                    <p>Визуализация графика недоступна, но найдено {{ data.summary.completed_tasks_no_comments_count }} закрытых задач без комментариев и вложений.</p>
-                                                {% else %}
-                                                    <p>В анализируемый период закрытых задач без комментариев и вложений не обнаружено.</p>
-                                                {% endif %}
-                                            </div>
-                                        {% endif %}
-                                    </div>
-                                    <div class="card-footer bg-light">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span><strong>Всего задач:</strong>
-                                                {% if data.chart_data and data.chart_data.special_charts and data.chart_data.special_charts.closed_no_comments %}
-                                                    {{ data.chart_data.special_charts.closed_no_comments.total }}
-                                                {% else %}
-                                                    {{ data.summary.completed_tasks_no_comments_count if data.summary and data.summary.completed_tasks_no_comments_count is defined else '0' }}
-                                                {% endif %}
-                                            </span>
-                                            {% if data.summary and data.summary.completed_tasks_no_comments_count is defined and data.summary.completed_tasks_no_comments_count > 0 %}
-                                                <span class="text-danger"><i class="bi bi-exclamation-triangle-fill"></i> Требуют внимания</span>
-                                            {% else %}
-                                                <span class="text-success"><i class="bi bi-check-circle-fill"></i> Всё в порядке</span>
-                                            {% endif %}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endif %}
-                        </div>
-                    {% else %}
-                        <div class="alert alert-info">
-                            <h4 class="alert-heading">Нет специальных графиков</h4>
-                            <p>В текущем отчете не найдены данные для специальных графиков:</p>
-                            <ul>
-                                <li><strong>Задачи без transitions</strong> - в анализируемый период нет задач, которые никогда не меняли статус.</li>
-                                <li><strong>Открытые задачи с логированием времени</strong> - в анализируемый период нет задач в статусе Open, на которые было списано время.</li>
-                                <li><strong>Закрытые задачи без комментариев/вложений</strong> - в анализируемый период нет закрытых задач без комментариев или вложений.</li>
-                            </ul>
-                            <hr>
-                            <p class="mb-0">Это может быть хорошим признаком, так как отсутствие таких задач свидетельствует о том, что они либо закрываются своевременно, либо документируются должным образом.</p>
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h3 class="mb-4">Графики</h3>
-
     <div class="row">
         {% if data.chart_data %}
-            <!-- Interactive charts -->
+            <!-- Открытые задачи со списаниями (renamed from no_transitions) -->
             <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h4>Распределение задач по проектам</h4>
+                <div class="card h-100 border-info">
+                    <div class="card-header bg-info text-white">
+                        <h4>Открытые задачи со списаниями</h4>
                     </div>
-                    <div class="card-body">
-                        <div class="mb-2 small text-muted">Нажмите на столбец графика, чтобы открыть соответствующие задачи в Jira</div>
-                        <div class="chart-container">
-                            <div class="chart-canvas-wrapper">
-                                <canvas id="projectDistributionChart" class="chart-canvas"></canvas>
+                    <div class="card-body text-center">
+                        <p class="text-muted mb-3">Задачи в статусе Open, на которые списано время за указанный период</p>
+
+                        {% if data.chart_data.special_charts.no_transitions.total > 0 %}
+                            <div class="mb-2 small text-muted">Нажмите на столбец графика, чтобы открыть соответствующие задачи в Jira</div>
+                            <div class="chart-container">
+                                <div class="chart-canvas-wrapper">
+                                    <canvas id="noTransitionsChart" class="chart-canvas"></canvas>
+                                </div>
                             </div>
+                        {% else %}
+                            <div class="alert alert-info">
+                                <p>В анализируемый период открытых задач со списаниями не обнаружено.</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><strong>Всего задач:</strong>
+                                {{ data.chart_data.special_charts.no_transitions.total }}
+                            </span>
+                            <span class="text-info"><i class="bi bi-info-circle"></i> Возможно, требуют внимания</span>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Сравнение оценки и затраченного времени -->
             <div class="col-lg-6 mb-4">
                 <div class="card h-100">
                     <div class="card-header">
@@ -352,6 +160,23 @@
                         <div class="chart-container">
                             <div class="chart-canvas-wrapper">
                                 <canvas id="comparisonChart" class="chart-canvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проекты и ссылки на Jira как Pie Chart - переименовано в "Распределение задач по проектам" -->
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4>Распределение задач по проектам</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-2 small text-muted">Нажмите на сегмент диаграммы, чтобы открыть соответствующие задачи в Jira</div>
+                        <div class="chart-container">
+                            <div class="chart-canvas-wrapper">
+                                <canvas id="projectsPieChart" class="chart-canvas"></canvas>
                             </div>
                         </div>
                     </div>
@@ -378,19 +203,19 @@
         {% else %}
             <!-- Static chart images if no interactive data -->
             {% for chart_type, chart_path in data.charts.items() %}
-                <!-- Skip special charts already displayed in special section, and removed charts -->
-                {% if chart_type != 'open_tasks' and chart_type != 'completed_tasks_no_comments' and chart_type != 'no_transitions_tasks' and chart_type != 'original_estimate' and chart_type != 'time_spent' %}
+                <!-- Skip removed charts, keep only valid ones -->
+                {% if chart_type != 'completed_tasks_no_comments' and chart_type != 'original_estimate' and chart_type != 'time_spent' and chart_type != 'project_distribution' %}
                 <div class="col-lg-6 mb-4">
                     <div class="card h-100">
                         <div class="card-header">
-                            {% if chart_type == 'project_distribution' %}
-                                <h4>Распределение задач по проектам</h4>
-                            {% elif chart_type == 'comparison' %}
+                            {% if chart_type == 'comparison' %}
                                 <h4>Сравнение оценки и затраченного времени</h4>
                             {% elif chart_type == 'project_pie' %}
-                                <h4>Круговая диаграмма распределения задач</h4>
+                                <h4>Распределение задач по проектам</h4>
                             {% elif chart_type == 'efficiency' %}
                                 <h4>Коэффициент эффективности</h4>
+                            {% elif chart_type == 'no_transitions_tasks' %}
+                                <h4>Открытые задачи со списаниями</h4>
                             {% else %}
                                 <h4>{{ chart_type|replace('_', ' ')|title }}</h4>
                             {% endif %}
@@ -404,32 +229,6 @@
             {% endfor %}
         {% endif %}
     </div>
-
-    {% if data.chart_data and data.chart_data.projects|length > 0 %}
-        <div class="row mt-4">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Проекты и ссылки на Jira</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            {% for project in data.chart_data.projects %}
-                                <div class="col-md-3">
-                                    <div class="clickable-box" onclick="createJiraLink('{{ project }}')">
-                                        <strong>{{ project }}</strong>
-                                        <div class="small text-muted">
-                                            Задач: {{ data.chart_data.project_counts.get(project, 0) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    {% endif %}
 
     {% if not data.charts and not data.chart_data %}
         <div class="alert alert-warning">

@@ -1,0 +1,23 @@
+{
+    "total_issues": 165,
+    "total_original_estimate_hours": 7479.0,
+    "total_time_spent_hours": 7441.246666666666,
+    "projects_count": 8,
+    "projects": [
+        "TUDS",
+        "SSO",
+        "PSCPSC",
+        "NBSSPORTAL",
+        "LIS",
+        "CSM",
+        "CPM",
+        "APC"
+    ],
+    "avg_estimate_per_issue": 45.32727272727273,
+    "avg_time_spent_per_issue": 45.09846464646464,
+    "overall_efficiency": 0.9949520880688149,
+    "no_transitions_tasks_count": 22,
+    "open_tasks_count": 25,
+    "open_tasks_time_spent_hours": 593.1666666666667,
+    "completed_tasks_no_comments_count": 32
+}

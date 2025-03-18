@@ -119,9 +119,7 @@ def get_improved_open_statuses(df):
 
     # Common open status terms (expanded)
     open_terms = [
-        'OPEN', 'TO DO', 'TODO', 'NEW', 'BACKLOG', 'IN PROGRESS', 'PROGRESS',
-        'АНАЛИЗ', 'В РАБОТЕ', 'ОТКРЫТ', 'РАЗРАБОТКА', 'REVIEW', 'TESTING',
-        'ТЕСТИРОВАНИЕ', 'ОЖИДАНИЕ', 'DEVELOPMENT', 'DESIGN'
+        'OPEN', 'NEW'
     ]
 
     # Get all unique statuses
@@ -162,14 +160,11 @@ def get_status_categories(df):
 
     # Terms for detecting open and closed statuses - expanded list with Russian terms
     open_terms = [
-        'OPEN', 'reopened', 'todo', 'to do', 'new',
-        'откр', 'verification', 'backlog'
+        'OPEN', 'NEW'
     ]
 
     closed_terms = [
-        'CLOSED', 'RESOLVED', 'resolved', 'DONE', 'complete', 'completed', 'fix', 'fixed',
-        'закрыт', 'готово', 'завершен', 'выполнен', 'исправлен', 'решен', 'отменен',
-        'verified', 'delivered', 'rejected', 'finish', 'ended', 'released'
+        'CLOSED', 'RESOLVED', 'DONE'
     ]
 
     # Initialize categories

@@ -134,19 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start status updates if analysis is running
     if (document.querySelector('[data-analysis-running="true"]')) {
         setTimeout(refreshStatus, 1000);
-    } else {
-        // Auto refresh page every 30 seconds to see new analyses
-        // started from other tabs
-        setInterval(() => {
-            fetch('/status')
-                .then(response => response.json())
-                .then(data => {
-                    // Reload page only if no analysis is running
-                    if (!data.is_running) {
-                        location.reload();
-                    }
-                })
-                .catch(error => console.error('Error:', error));
-        }, 30000);
     }
+    // Удалено автообновление страницы каждые 30 секунд
 });

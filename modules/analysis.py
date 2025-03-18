@@ -4,6 +4,7 @@ import logging
 from datetime import datetime
 from routes.main_routes import analysis_state
 from modules.jira_analyzer import JiraAnalyzer
+from modules.data_processor import get_improved_open_statuses, get_status_categories
 
 # Get logger
 logger = logging.getLogger(__name__)
@@ -11,6 +12,94 @@ logger = logging.getLogger(__name__)
 # Directory for saving charts
 CHARTS_DIR = 'jira_charts'
 
+def prepare_chart_data(df, use_filter=True, filter_id=None, jql_query=None, date_from=None, date_to=None):
+    """
+    Prepare chart data for interactive charts with special attention to special charts
+
+    Args:
+        df (pandas.DataFrame): Processed data frame
+        use_filter (bool): Whether filter ID was used
+        filter_id: ID of the filter used
+        jql_query: JQL query used
+        date_from: From date
+        date_to: To date
+
+    Returns:
+        dict: Chart data for interactive charts
+    """
+    import logging
+    from modules.data_processor import get_status_categories, get_improved_open_statuses
+
+    logger = logging.getLogger(__name__)
+
+    try:
+        # Project data
+        project_counts = df['project'].value_counts().to_dict()
+        project_estimates = df.groupby('project')['original_estimate_hours'].sum().to_dict()
+        project_time_spent = df.groupby('project')['time_spent_hours'].sum().to_dict()
+
+        # Generate the list of all projects
+        all_projects = list(set(list(project_counts.keys()) +
+                                list(project_estimates.keys()) +
+                                list(project_time_spent.keys())))
+
+        logger.info(f"Prepared basic chart data with {len(all_projects)} projects")
+
+        # Special chart 1: No transitions tasks data (переименован в "Открытые задачи со списаниями")
+        no_transitions_tasks = df[df['no_transitions'] == True]
+        no_transitions_by_project = {}
+        if not no_transitions_tasks.empty:
+            try:
+                no_transitions_by_project = no_transitions_tasks.groupby('project').size().to_dict()
+                logger.info(f"Prepared open tasks with worklogs data with {len(no_transitions_by_project)} projects")
+            except Exception as e:
+                logger.error(f"Error preparing open tasks with worklogs data: {str(e)}")
+                # Provide an empty dict in case of error
+                no_transitions_by_project = {}
+        else:
+            logger.info("Open tasks with worklogs dataset is empty")
+
+        # Make sure we handle empty DataFrames gracefully
+        no_transitions_count = len(no_transitions_tasks) if 'no_transitions_tasks' in locals() else 0
+
+        # Save data for interactive charts
+        chart_data = {
+            'project_counts': project_counts,
+            'project_estimates': project_estimates,
+            'project_time_spent': project_time_spent,
+            'projects': all_projects,
+            'filter_params': {
+                'filter_id': filter_id if use_filter else None,
+                'jql': jql_query if not use_filter else None,
+                'date_from': date_from,
+                'date_to': date_to
+            },
+            # Add special chart data - ensure this is always included
+            'special_charts': {
+                'no_transitions': {
+                    'title': 'Открытые задачи со списаниями',
+                    'by_project': no_transitions_by_project,
+                    'total': no_transitions_count
+                }
+            }
+        }
+
+        logger.info("Chart data preparation complete")
+        return chart_data
+
+    except Exception as e:
+        logger.error(f"Error in prepare_chart_data: {str(e)}", exc_info=True)
+        # Return a minimal valid structure if any error occurs
+        return {
+            'project_counts': {},
+            'project_estimates': {},
+            'project_time_spent': {},
+            'projects': [],
+            'filter_params': {},
+            'special_charts': {
+                'no_transitions': {'title': 'Открытые задачи со списаниями', 'by_project': {}, 'total': 0}
+            }
+        }
 
 def run_analysis(use_filter=True, filter_id=114476, jql_query=None, date_from=None, date_to=None):
     """
@@ -105,25 +194,15 @@ def run_analysis(use_filter=True, filter_id=114476, jql_query=None, date_from=No
         analysis_state['status_message'] = 'Creating interactive charts...'
         analysis_state['progress'] = 80
 
-        # Project data
-        project_counts = df['project'].value_counts().to_dict()
-        project_estimates = df.groupby('project')['original_estimate_hours'].sum().to_dict()
-        project_time_spent = df.groupby('project')['time_spent_hours'].sum().to_dict()
-
-        # Save data for interactive charts
-        chart_data = {
-            'project_counts': project_counts,
-            'project_estimates': project_estimates,
-            'project_time_spent': project_time_spent,
-            'projects': list(
-                set(list(project_counts.keys()) + list(project_estimates.keys()) + list(project_time_spent.keys()))),
-            'filter_params': {
-                'filter_id': filter_id if use_filter else None,
-                'jql': jql_query if not use_filter else None,
-                'date_from': date_from,
-                'date_to': date_to
-            }
-        }
+        # Use the prepare_chart_data function instead of inline code
+        chart_data = prepare_chart_data(
+            df,
+            use_filter=use_filter,
+            filter_id=filter_id,
+            jql_query=jql_query,
+            date_from=date_from,
+            date_to=date_to
+        )
 
         chart_data_path = os.path.join(data_dir, 'chart_data.json')
         with open(chart_data_path, 'w', encoding='utf-8') as f:
