@@ -1,0 +1,41 @@
+{
+    "timestamp": "20250320_154522",
+    "total_issues": 87,
+    "charts": {
+        "project_distribution": "jira_charts\\20250320_154522/project_distribution.png",
+        "comparison": "jira_charts\\20250320_154522/estimate_vs_spent_by_project.png",
+        "project_pie": "jira_charts\\20250320_154522/project_distribution_pie.png",
+        "efficiency": "jira_charts\\20250320_154522/efficiency_ratio_by_project.png",
+        "no_transitions_tasks": "jira_charts\\20250320_154522/no_transitions_tasks.png",
+        "open_tasks": "jira_charts\\20250320_154522/open_tasks_time_spent.png",
+        "completed_tasks_no_comments": "jira_charts\\20250320_154522/completed_tasks_no_comments.png",
+        "summary": "jira_charts\\20250320_154522/summary.json"
+    },
+    "summary": {
+        "total_issues": 87,
+        "total_original_estimate_hours": 2864.0,
+        "total_time_spent_hours": 3021.75,
+        "projects_count": 5,
+        "projects": [
+            "TUDS",
+            "NBSSPORTAL",
+            "LIS",
+            "CSM",
+            "APC"
+        ],
+        "avg_estimate_per_issue": 32.91954022988506,
+        "avg_time_spent_per_issue": 34.73275862068966,
+        "overall_efficiency": 1.0550803072625698,
+        "no_transitions_tasks_count": 15,
+        "open_tasks_count": 18,
+        "open_tasks_time_spent_hours": 201.25,
+        "completed_tasks_no_comments_count": 9
+    },
+    "date_from": "2025-03-16",
+    "date_to": "2025-03-20",
+    "filter_id": "114476",
+    "jql_query": null,
+    "clm_filter_id": null,
+    "clm_jql_query": null,
+    "data_source": "jira"
+}

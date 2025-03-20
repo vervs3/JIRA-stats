@@ -1,0 +1,51 @@
+{
+    "timestamp": "20250320_191519",
+    "total_issues": 184,
+    "charts": {
+        "project_distribution": "jira_charts\\20250320_191519/project_distribution.png",
+        "comparison": "jira_charts\\20250320_191519/estimate_vs_spent_by_project.png",
+        "project_pie": "jira_charts\\20250320_191519/project_distribution_pie.png",
+        "efficiency": "jira_charts\\20250320_191519/efficiency_ratio_by_project.png",
+        "no_transitions_tasks": "jira_charts\\20250320_191519/no_transitions_tasks.png",
+        "open_tasks": "jira_charts\\20250320_191519/open_tasks_time_spent.png",
+        "completed_tasks_no_comments": "jira_charts\\20250320_191519/completed_tasks_no_comments.png",
+        "summary": "jira_charts\\20250320_191519/summary.json",
+        "clm_summary": "jira_charts\\20250320_191519/clm_summary.png"
+    },
+    "summary": {
+        "total_issues": 184,
+        "total_original_estimate_hours": 3987.0,
+        "total_time_spent_hours": 4492.25,
+        "projects_count": 3,
+        "projects": [
+            "SSO",
+            "NBSSPORTAL",
+            "CHM"
+        ],
+        "avg_estimate_per_issue": 21.668478260869566,
+        "avg_time_spent_per_issue": 24.414402173913043,
+        "overall_efficiency": 1.1267243541509908,
+        "no_transitions_tasks_count": 23,
+        "open_tasks_count": 24,
+        "open_tasks_time_spent_hours": 763.0,
+        "completed_tasks_no_comments_count": 45,
+        "clm_issues_count": 1,
+        "est_issues_count": 7,
+        "improvement_issues_count": 3,
+        "linked_issues_count": 3,
+        "filtered_issues_count": 184,
+        "implementation_projects_count": 3,
+        "components_mapping": {
+            "SSO+NGINX": [
+                "SSO"
+            ]
+        }
+    },
+    "date_from": "2025-03-02",
+    "date_to": "2025-03-20",
+    "filter_id": null,
+    "jql_query": null,
+    "clm_filter_id": null,
+    "clm_jql_query": "issue=CLM-475731\r\n",
+    "data_source": "clm"
+}

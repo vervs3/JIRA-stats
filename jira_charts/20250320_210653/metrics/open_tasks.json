@@ -1,0 +1,32 @@
+{
+  "count": 55,
+  "total_time_spent": 3351.25,
+  "by_project": {
+    "CHM": 21.0,
+    "CSM": 2.0,
+    "DMS": 1263.0,
+    "GUS": 133.0,
+    "LIS": 9.0,
+    "NBSSPORTAL": 84.0,
+    "SSO": 36.25,
+    "TUDS": 1350.75,
+    "UDB": 32.0,
+    "UMNP": 420.25
+  },
+  "task_statuses": {
+    "Open": 54,
+    "Reopened": 1
+  },
+  "sample_tasks": [
+    "NBSSPORTAL-427",
+    "TUDS-2769",
+    "TUDS-2767",
+    "TUDS-2763",
+    "TUDS-2756",
+    "TUDS-2695",
+    "TUDS-2678",
+    "GUS-12327",
+    "TUDS-2775",
+    "TUDS-2757"
+  ]
+}

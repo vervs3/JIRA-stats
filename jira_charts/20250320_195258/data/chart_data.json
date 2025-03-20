@@ -1,0 +1,55 @@
+{
+    "project_counts": {
+        "SSO": 151,
+        "NBSSPORTAL": 106,
+        "CHM": 95
+    },
+    "project_estimates": {
+        "CHM": 1111.0,
+        "NBSSPORTAL": 3800.0,
+        "SSO": 1901.0
+    },
+    "project_time_spent": {
+        "CHM": 1372.5,
+        "NBSSPORTAL": 4358.333333333333,
+        "SSO": 2208.0
+    },
+    "projects": [
+        "SSO",
+        "CHM",
+        "NBSSPORTAL"
+    ],
+    "data_source": "clm",
+    "filter_params": {
+        "filter_id": null,
+        "jql": null,
+        "clm_filter_id": null,
+        "clm_jql": "issue=CLM-475731\r\n",
+        "date_from": "2025-02-02",
+        "date_to": "2025-03-20"
+    },
+    "special_charts": {
+        "no_transitions": {
+            "title": "Открытые задачи со списаниями",
+            "by_project": {
+                "CHM": 6,
+                "NBSSPORTAL": 12,
+                "SSO": 13
+            },
+            "total": 31
+        }
+    },
+    "clm_metrics": {
+        "clm_issues_count": 1,
+        "est_issues_count": 7,
+        "improvement_issues_count": 3,
+        "linked_issues_count": 40,
+        "filtered_issues_count": 352,
+        "implementation_projects_count": 3,
+        "components_mapping": {
+            "SSO+NGINX": [
+                "SSO"
+            ]
+        }
+    }
+}

@@ -38,7 +38,8 @@ def register_main_routes(app):
                     'charts_count': 0,
                     'total_issues': 0,
                     'date_from': None,
-                    'date_to': None
+                    'date_to': None,
+                    'analysis_type': 'jira'  # Default to 'jira' if not specified
                 }
 
                 if os.path.exists(index_file):
@@ -50,6 +51,8 @@ def register_main_routes(app):
                             info['total_issues'] = data.get('total_issues', 0)
                             info['date_from'] = data.get('date_from')
                             info['date_to'] = data.get('date_to')
+                            # Include the data source type (jira or clm)
+                            info['analysis_type'] = data.get('data_source', 'jira')
                     except Exception as e:
                         logger.error(f"Error reading index file {index_file}: {e}")
 

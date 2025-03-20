@@ -1,0 +1,63 @@
+{
+    "project_counts": {
+        "TUDS": 126,
+        "CSM": 108,
+        "NBSSPORTAL": 31,
+        "APC": 8,
+        "LIS": 3,
+        "SSO": 2,
+        "PSCPSC": 1,
+        "CPM": 1
+    },
+    "project_estimates": {
+        "APC": 78.0,
+        "CPM": 16.0,
+        "CSM": 1151.0,
+        "LIS": 192.0,
+        "NBSSPORTAL": 2624.0,
+        "PSCPSC": 80.0,
+        "SSO": 360.0,
+        "TUDS": 4852.0
+    },
+    "project_time_spent": {
+        "APC": 117.5,
+        "CPM": 24.0,
+        "CSM": 1848.6666666666667,
+        "LIS": 129.0,
+        "NBSSPORTAL": 2010.0,
+        "PSCPSC": 59.5,
+        "SSO": 349.0,
+        "TUDS": 5470.496666666667
+    },
+    "projects": [
+        "PSCPSC",
+        "TUDS",
+        "CPM",
+        "APC",
+        "NBSSPORTAL",
+        "SSO",
+        "LIS",
+        "CSM"
+    ],
+    "data_source": "jira",
+    "filter_params": {
+        "filter_id": "114476",
+        "jql": null,
+        "clm_filter_id": null,
+        "clm_jql": null,
+        "date_from": "2025-02-18",
+        "date_to": "2025-03-20"
+    },
+    "special_charts": {
+        "no_transitions": {
+            "title": "Открытые задачи со списаниями",
+            "by_project": {
+                "APC": 1,
+                "CSM": 8,
+                "NBSSPORTAL": 2,
+                "TUDS": 19
+            },
+            "total": 30
+        }
+    }
+}

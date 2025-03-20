@@ -1,0 +1,39 @@
+{
+  "count": 235,
+  "total_time_spent": 11209.556666666667,
+  "by_project": {
+    "APC": 110.5,
+    "CHM": 107.75,
+    "CPM": 511.41666666666663,
+    "CSM": 513.5,
+    "DMS": 1783.5,
+    "GUS": 585.0,
+    "LIS": 96.41666666666667,
+    "NBSSPORTAL": 553.0,
+    "NWMCCS": 267.4166666666667,
+    "PASS": 28.5,
+    "PIC": 204.5,
+    "PSCPSC": 2039.3,
+    "SSO": 110.75,
+    "TUDS": 3677.2566666666667,
+    "UDB": 122.0,
+    "UMNP": 412.75,
+    "UNIBLP": 86.0
+  },
+  "task_statuses": {
+    "Open": 233,
+    "Reopened": 2
+  },
+  "sample_tasks": [
+    "PSCPSC-26041",
+    "PSCPSC-26005",
+    "PSCPSC-25987",
+    "PSCPSC-25983",
+    "PSCPSC-25959",
+    "PSCPSC-25958",
+    "PSCPSC-25955",
+    "PSCPSC-25900",
+    "PSCPSC-25882",
+    "PSCPSC-25862"
+  ]
+}

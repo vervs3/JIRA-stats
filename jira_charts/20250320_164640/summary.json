@@ -1,0 +1,84 @@
+{
+    "total_issues": 1447,
+    "total_original_estimate_hours": 31369.5,
+    "total_time_spent_hours": 47645.3,
+    "projects_count": 18,
+    "projects": [
+        "LIS",
+        "UNIBLP",
+        "TUDS",
+        "NBSSPORTAL",
+        "CSM",
+        "UMNP",
+        "UDB",
+        "PIC",
+        "GUS",
+        "NLM",
+        "CHM",
+        "DMS",
+        "PASS",
+        "CPM",
+        "APC",
+        "NWMCCS",
+        "PSCPSC",
+        "SSO"
+    ],
+    "avg_estimate_per_issue": 21.678991015894955,
+    "avg_time_spent_per_issue": 32.92695231513476,
+    "overall_efficiency": 1.5188415499131322,
+    "no_transitions_tasks_count": 216,
+    "open_tasks_count": 236,
+    "open_tasks_time_spent_hours": 11217.056666666667,
+    "completed_tasks_no_comments_count": 328,
+    "clm_issues_count": 694,
+    "est_issues_count": 324,
+    "improvement_issues_count": 132,
+    "linked_issues_count": 162,
+    "filtered_issues_count": 1447,
+    "implementation_projects_count": 18,
+    "components_mapping": {
+        "LCCM+LIS": [
+            "LIS"
+        ],
+        "NLM": [
+            "NLM"
+        ],
+        "APC_CSM": [
+            "CSM",
+            "APC"
+        ],
+        "SSO+NGINX": [
+            "SSO"
+        ],
+        "CAM+CPM+CIA": [
+            "CPM"
+        ],
+        "DMS_INV": [
+            "DMS"
+        ],
+        "UDB_INV": [
+            "UDB"
+        ],
+        "PASS": [
+            "PASS"
+        ],
+        "NWM_OCS": [
+            "NWMCCS"
+        ],
+        "PSC": [
+            "PSCPSC"
+        ],
+        "UNIGUI": [
+            "UNIBLP"
+        ],
+        "MNP_INV": [
+            "UMNP"
+        ],
+        "NBSS_TEST": [
+            "NBSSPORTAL"
+        ],
+        "GUS_INV": [
+            "GUS"
+        ]
+    }
+}

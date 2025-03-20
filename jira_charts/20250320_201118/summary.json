@@ -1,0 +1,29 @@
+{
+    "total_issues": 352,
+    "total_original_estimate_hours": 6812.0,
+    "total_time_spent_hours": 7938.833333333333,
+    "projects_count": 3,
+    "projects": [
+        "SSO",
+        "NBSSPORTAL",
+        "CHM"
+    ],
+    "avg_estimate_per_issue": 19.352272727272727,
+    "avg_time_spent_per_issue": 22.553503787878785,
+    "overall_efficiency": 1.1654188686631435,
+    "no_transitions_tasks_count": 31,
+    "open_tasks_count": 32,
+    "open_tasks_time_spent_hours": 811.5,
+    "completed_tasks_no_comments_count": 100,
+    "clm_issues_count": 1,
+    "est_issues_count": 7,
+    "improvement_issues_count": 3,
+    "linked_issues_count": 40,
+    "filtered_issues_count": 352,
+    "implementation_projects_count": 3,
+    "components_mapping": {
+        "SSO+NGINX": [
+            "SSO"
+        ]
+    }
+}

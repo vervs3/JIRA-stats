@@ -1,0 +1,101 @@
+{
+    "total_issues": 208,
+    "total_original_estimate_hours": 10118.0,
+    "total_time_spent_hours": 10459.813333333334,
+    "projects_count": 14,
+    "projects": [
+        "NBSSPORTAL",
+        "TUDS",
+        "PSCPSC",
+        "LIS",
+        "GUS",
+        "PIC",
+        "DMS",
+        "NWMCCS",
+        "CSM",
+        "APC",
+        "UDB",
+        "SSO",
+        "CHM",
+        "UMNP"
+    ],
+    "avg_estimate_per_issue": 48.64423076923077,
+    "avg_time_spent_per_issue": 50.287564102564104,
+    "overall_efficiency": 1.0337826975028004,
+    "no_transitions_tasks_count": 51,
+    "open_tasks_count": 55,
+    "open_tasks_time_spent_hours": 3351.25,
+    "completed_tasks_no_comments_count": 29,
+    "clm_issues_count": 694,
+    "est_issues_count": 324,
+    "improvement_issues_count": 132,
+    "linked_issues_count": 1108,
+    "filtered_issues_count": 208,
+    "implementation_projects_count": 21,
+    "components_mapping": {
+        "LBF_ARH_UI": [],
+        "GUS_INV": [
+            "GUS"
+        ],
+        "DOC": [],
+        "CAM+CPM+CIA": [
+            "CPM"
+        ],
+        "LBF_DEVOPS": [],
+        "NUS": [
+            "NBSSPORTAL",
+            "NUS"
+        ],
+        "UNKNOWN": [],
+        "PAYS": [],
+        "ORION": [],
+        "RM_DOCS": [],
+        "NLM": [
+            "NLM"
+        ],
+        "RM_ARH": [],
+        "UNIGUI": [
+            "NBSSPORTAL"
+        ],
+        "MON": [],
+        "Perforator": [],
+        "UDB_INV": [
+            "UDB",
+            "SSO"
+        ],
+        "NWM_OCS": [
+            "NWMCCS"
+        ],
+        "LCCM+LIS": [
+            "LIS"
+        ],
+        "NBSS_TEST": [
+            "NBSSPORTAL"
+        ],
+        "APC_CSM": [
+            "CSM",
+            "APC"
+        ],
+        "MNP_INV": [
+            "UMNP"
+        ],
+        "UFM+LCM": [],
+        "PASS": [
+            "PASS"
+        ],
+        "DMS_INV": [
+            "DMS"
+        ],
+        "DOCS_BF": [],
+        "PSC": [
+            "PSCPSC"
+        ],
+        "PRAIM_INV": [
+            "CHM"
+        ],
+        "RM_DELIVERY": [],
+        "SSO+NGINX": [
+            "SSO"
+        ]
+    }
+}

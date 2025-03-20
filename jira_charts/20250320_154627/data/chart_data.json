@@ -1,0 +1,84 @@
+{
+    "project_counts": {
+        "NBSSPORTAL": 1
+    },
+    "project_estimates": {
+        "NBSSPORTAL": 240.0
+    },
+    "project_time_spent": {
+        "NBSSPORTAL": 158.0
+    },
+    "projects": [
+        "NBSSPORTAL"
+    ],
+    "data_source": "clm",
+    "filter_params": {
+        "filter_id": null,
+        "jql": null,
+        "clm_filter_id": "114473",
+        "clm_jql": null,
+        "date_from": "2025-03-16",
+        "date_to": "2025-03-20"
+    },
+    "special_charts": {
+        "no_transitions": {
+            "title": "Открытые задачи со списаниями",
+            "by_project": {},
+            "total": 0
+        }
+    },
+    "clm_metrics": {
+        "clm_issues_count": 694,
+        "est_issues_count": 324,
+        "improvement_issues_count": 132,
+        "linked_issues_count": 162,
+        "filtered_issues_count": 1,
+        "implementation_projects_count": 18,
+        "components_mapping": {
+            "NWM_OCS": [
+                "NWMCCS"
+            ],
+            "UNIGUI": [
+                "UNIBLP"
+            ],
+            "DMS_INV": [
+                "DMS"
+            ],
+            "MNP_INV": [
+                "UMNP"
+            ],
+            "UDB_INV": [
+                "UDB"
+            ],
+            "APC_CSM": [
+                "APC",
+                "CSM"
+            ],
+            "NLM": [
+                "NLM"
+            ],
+            "PSC": [
+                "PSCPSC"
+            ],
+            "SSO+NGINX": [
+                "SSO"
+            ],
+            "CAM+CPM+CIA": [
+                "CPM"
+            ],
+            "PASS": [
+                "PASS"
+            ],
+            "GUS_INV": [
+                "GUS"
+            ],
+            "NBSS_TEST": [
+                "NBSSPORTAL"
+            ],
+            "LCCM+LIS": [
+                "LIS"
+            ]
+        },
+        "clm_filter": "filter=114473"
+    }
+}

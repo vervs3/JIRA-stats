@@ -1,0 +1,23 @@
+{
+  "count": 326,
+  "by_project": {
+    "APC": 16,
+    "CHM": 5,
+    "CPM": 23,
+    "CSM": 69,
+    "DMS": 5,
+    "GUS": 15,
+    "LIS": 14,
+    "NBSSPORTAL": 6,
+    "NLM": 2,
+    "NWMCCS": 4,
+    "PASS": 14,
+    "PIC": 4,
+    "PSCPSC": 39,
+    "SSO": 70,
+    "TUDS": 29,
+    "UDB": 3,
+    "UMNP": 3,
+    "UNIBLP": 5
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "timestamp": "20250320_163601",
+    "total_issues": 0,
+    "charts": {},
+    "summary": {
+        "total_issues": 0,
+        "total_original_estimate_hours": 0,
+        "total_time_spent_hours": 0,
+        "projects_count": 0,
+        "projects": [],
+        "avg_estimate_per_issue": 0,
+        "avg_time_spent_per_issue": 0,
+        "overall_efficiency": 0,
+        "clm_issues_count": 694,
+        "est_issues_count": 0,
+        "improvement_issues_count": 0,
+        "linked_issues_count": 0,
+        "filtered_issues_count": 0,
+        "implementation_projects_count": 0,
+        "components_mapping": {}
+    },
+    "date_from": "2025-02-18",
+    "date_to": "2025-03-20",
+    "filter_id": null,
+    "jql_query": null,
+    "clm_filter_id": "114473",
+    "clm_jql_query": null,
+    "data_source": "clm"
+}

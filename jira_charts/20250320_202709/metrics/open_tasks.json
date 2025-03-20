@@ -1,0 +1,24 @@
+{
+  "count": 32,
+  "total_time_spent": 811.5,
+  "by_project": {
+    "CHM": 108.75,
+    "NBSSPORTAL": 592.0,
+    "SSO": 110.75
+  },
+  "task_statuses": {
+    "Open": 32
+  },
+  "sample_tasks": [
+    "CHM-1341",
+    "CHM-1317",
+    "CHM-1264",
+    "CHM-1219",
+    "CHM-1199",
+    "CHM-1160",
+    "SSO-14597",
+    "SSO-14594",
+    "SSO-14589",
+    "SSO-14567"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "count": 149,
+  "total_time_spent": 7249.973333333333,
+  "by_project": {
+    "APC": 80.0,
+    "CHM": 35.5,
+    "CPM": 497.91666666666663,
+    "CSM": 414.0,
+    "DMS": 1056.5,
+    "GUS": 499.0,
+    "LIS": 69.5,
+    "NBSSPORTAL": 520.0,
+    "NWMCCS": 131.41666666666669,
+    "PASS": 28.5,
+    "PIC": 172.5,
+    "PSCPSC": 734.3,
+    "SSO": 108.25,
+    "TUDS": 2476.34,
+    "UDB": 66.0,
+    "UMNP": 360.25
+  },
+  "task_statuses": {
+    "Open": 147,
+    "Reopened": 2
+  },
+  "sample_tasks": [
+    "APC-1405",
+    "TUDS-2774",
+    "TUDS-2769",
+    "TUDS-2767",
+    "TUDS-2763",
+    "TUDS-2759",
+    "TUDS-2757",
+    "TUDS-2756",
+    "TUDS-2737",
+    "TUDS-2726"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "clm_issues_count": 1,
+    "est_issues_count": 7,
+    "improvement_issues_count": 3,
+    "linked_issues_count": 3,
+    "filtered_issues_count": 0,
+    "implementation_projects_count": 3,
+    "components_mapping": {
+        "SSO+NGINX": [
+            "SSO"
+        ]
+    },
+    "clm_filter": "issue=CLM-475731"
+}

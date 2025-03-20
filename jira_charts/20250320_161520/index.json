@@ -1,0 +1,90 @@
+{
+    "timestamp": "20250320_161520",
+    "total_issues": 8,
+    "charts": {
+        "project_distribution": "jira_charts\\20250320_161520/project_distribution.png",
+        "comparison": "jira_charts\\20250320_161520/estimate_vs_spent_by_project.png",
+        "project_pie": "jira_charts\\20250320_161520/project_distribution_pie.png",
+        "efficiency": "jira_charts\\20250320_161520/efficiency_ratio_by_project.png",
+        "no_transitions_tasks": "jira_charts\\20250320_161520/no_transitions_tasks.png",
+        "open_tasks": "jira_charts\\20250320_161520/open_tasks_time_spent.png",
+        "completed_tasks_no_comments": "jira_charts\\20250320_161520/completed_tasks_no_comments.png",
+        "summary": "jira_charts\\20250320_161520/summary.json",
+        "clm_summary": "jira_charts\\20250320_161520/clm_summary.png"
+    },
+    "summary": {
+        "total_issues": 8,
+        "total_original_estimate_hours": 920.0,
+        "total_time_spent_hours": 620.0,
+        "projects_count": 1,
+        "projects": [
+            "NBSSPORTAL"
+        ],
+        "avg_estimate_per_issue": 115.0,
+        "avg_time_spent_per_issue": 77.5,
+        "overall_efficiency": 0.6739130434782609,
+        "no_transitions_tasks_count": 1,
+        "open_tasks_count": 1,
+        "open_tasks_time_spent_hours": 32.0,
+        "completed_tasks_no_comments_count": 2,
+        "clm_issues_count": 694,
+        "est_issues_count": 324,
+        "improvement_issues_count": 132,
+        "linked_issues_count": 162,
+        "filtered_issues_count": 8,
+        "implementation_projects_count": 18,
+        "components_mapping": {
+            "CAM+CPM+CIA": [
+                "CPM"
+            ],
+            "GUS_INV": [
+                "GUS"
+            ],
+            "MNP_INV": [
+                "UMNP"
+            ],
+            "LCCM+LIS": [
+                "LIS"
+            ],
+            "DMS_INV": [
+                "DMS"
+            ],
+            "PASS": [
+                "PASS"
+            ],
+            "UDB_INV": [
+                "UDB"
+            ],
+            "NBSS_TEST": [
+                "NBSSPORTAL"
+            ],
+            "APC_CSM": [
+                "CSM",
+                "APC"
+            ],
+            "NWM_OCS": [
+                "NWMCCS"
+            ],
+            "PSC": [
+                "PSCPSC"
+            ],
+            "NLM": [
+                "NLM"
+            ],
+            "UNIGUI": [
+                "UNIBLP"
+            ],
+            "SSO+NGINX": [
+                "SSO"
+            ]
+        },
+        "clm_filter": "filter=114473"
+    },
+    "date_from": "2025-03-02",
+    "date_to": "2025-03-20",
+    "filter_id": null,
+    "jql_query": null,
+    "clm_filter_id": "114473",
+    "clm_jql_query": null,
+    "data_source": "clm"
+}

@@ -1,0 +1,26 @@
+{
+    "total_issues": 0,
+    "total_original_estimate_hours": 0,
+    "total_time_spent_hours": 0,
+    "projects_count": 3,
+    "projects": [
+        "CHM",
+        "NBSSPORTAL",
+        "SSO"
+    ],
+    "avg_estimate_per_issue": 0,
+    "avg_time_spent_per_issue": 0,
+    "overall_efficiency": 0,
+    "clm_issues_count": 1,
+    "est_issues_count": 7,
+    "improvement_issues_count": 3,
+    "linked_issues_count": 3,
+    "filtered_issues_count": 0,
+    "implementation_projects_count": 3,
+    "components_mapping": {
+        "SSO+NGINX": [
+            "SSO"
+        ]
+    },
+    "clm_filter": "issue=CLM-475731"
+}

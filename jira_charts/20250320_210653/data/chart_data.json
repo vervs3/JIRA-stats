@@ -1,0 +1,478 @@
+{
+    "project_counts": {
+        "TUDS": 95,
+        "SSO": 39,
+        "NBSSPORTAL": 24,
+        "DMS": 15,
+        "UMNP": 11,
+        "CHM": 9,
+        "LIS": 4,
+        "GUS": 4,
+        "NWMCCS": 2,
+        "PSCPSC": 1,
+        "PIC": 1,
+        "CSM": 1,
+        "APC": 1,
+        "UDB": 1
+    },
+    "project_estimates": {
+        "APC": 0.0,
+        "CHM": 208.0,
+        "CSM": 0.0,
+        "DMS": 2848.0,
+        "GUS": 360.0,
+        "LIS": 80.0,
+        "NBSSPORTAL": 1344.0,
+        "NWMCCS": 40.0,
+        "PIC": 0.0,
+        "PSCPSC": 80.0,
+        "SSO": 922.0,
+        "TUDS": 4204.0,
+        "UDB": 32.0,
+        "UMNP": 0.0
+    },
+    "project_time_spent": {
+        "APC": 8.0,
+        "CHM": 242.25,
+        "CSM": 2.0,
+        "DMS": 2633.4,
+        "GUS": 159.0,
+        "LIS": 69.33333333333333,
+        "NBSSPORTAL": 1123.25,
+        "NWMCCS": 61.0,
+        "PIC": 8.0,
+        "PSCPSC": 59.5,
+        "SSO": 838.75,
+        "TUDS": 4652.08,
+        "UDB": 32.0,
+        "UMNP": 571.25
+    },
+    "projects": [
+        "NWMCCS",
+        "NBSSPORTAL",
+        "UMNP",
+        "CHM",
+        "UDB",
+        "DMS",
+        "APC",
+        "SSO",
+        "LIS",
+        "GUS",
+        "CSM",
+        "TUDS",
+        "PIC",
+        "PSCPSC"
+    ],
+    "data_source": "clm",
+    "filter_params": {
+        "filter_id": null,
+        "jql": null,
+        "clm_filter_id": "114473",
+        "clm_jql": null,
+        "date_from": "2025-03-02",
+        "date_to": "2025-03-20"
+    },
+    "special_charts": {
+        "no_transitions": {
+            "title": "Открытые задачи со списаниями",
+            "by_project": {
+                "CHM": 1,
+                "CSM": 1,
+                "DMS": 8,
+                "GUS": 2,
+                "LIS": 1,
+                "NBSSPORTAL": 3,
+                "SSO": 8,
+                "TUDS": 18,
+                "UDB": 1,
+                "UMNP": 8
+            },
+            "total": 51,
+            "issue_keys_by_project": {
+                "CHM": [
+                    "CHM-1199"
+                ],
+                "CSM": [
+                    "CSM-3579"
+                ],
+                "DMS": [
+                    "DMS-1299",
+                    "DMS-1277",
+                    "DMS-1254",
+                    "DMS-1244",
+                    "DMS-1243",
+                    "DMS-1235",
+                    "DMS-1232",
+                    "DMS-1228"
+                ],
+                "GUS": [
+                    "GUS-12327",
+                    "GUS-12355"
+                ],
+                "LIS": [
+                    "LIS-13507"
+                ],
+                "NBSSPORTAL": [
+                    "NBSSPORTAL-427",
+                    "NBSSPORTAL-480",
+                    "NBSSPORTAL-435"
+                ],
+                "SSO": [
+                    "SSO-14589",
+                    "SSO-14564",
+                    "SSO-14563",
+                    "SSO-14366",
+                    "SSO-14594",
+                    "SSO-14564",
+                    "SSO-14563",
+                    "SSO-14366"
+                ],
+                "TUDS": [
+                    "TUDS-2769",
+                    "TUDS-2767",
+                    "TUDS-2763",
+                    "TUDS-2756",
+                    "TUDS-2678",
+                    "TUDS-2775",
+                    "TUDS-2757",
+                    "TUDS-1525",
+                    "TUDS-2673",
+                    "TUDS-2662",
+                    "TUDS-2590",
+                    "TUDS-2458",
+                    "TUDS-2457",
+                    "TUDS-2399",
+                    "TUDS-2346",
+                    "TUDS-2418",
+                    "TUDS-2513",
+                    "TUDS-1401"
+                ],
+                "UDB": [
+                    "UDB-5674"
+                ],
+                "UMNP": [
+                    "UMNP-474",
+                    "UMNP-470",
+                    "UMNP-437",
+                    "UMNP-494",
+                    "UMNP-493",
+                    "UMNP-490",
+                    "UMNP-489",
+                    "UMNP-488"
+                ]
+            }
+        }
+    },
+    "project_issue_mapping": {
+        "NWMCCS": [
+            "NWMCCS-541",
+            "NWMCCS-488"
+        ],
+        "NBSSPORTAL": [
+            "NBSSPORTAL-427",
+            "NBSSPORTAL-333",
+            "NBSSPORTAL-265",
+            "NBSSPORTAL-384",
+            "NBSSPORTAL-281",
+            "NBSSPORTAL-182",
+            "NBSSPORTAL-111",
+            "NBSSPORTAL-110",
+            "NBSSPORTAL-489",
+            "NBSSPORTAL-480",
+            "NBSSPORTAL-467",
+            "NBSSPORTAL-466",
+            "NBSSPORTAL-462",
+            "NBSSPORTAL-436",
+            "NBSSPORTAL-422",
+            "NBSSPORTAL-416",
+            "NBSSPORTAL-186",
+            "NBSSPORTAL-225",
+            "NBSSPORTAL-437",
+            "NBSSPORTAL-435",
+            "NBSSPORTAL-365",
+            "NBSSPORTAL-364",
+            "NBSSPORTAL-363",
+            "NBSSPORTAL-162"
+        ],
+        "UMNP": [
+            "UMNP-474",
+            "UMNP-470",
+            "UMNP-459",
+            "UMNP-443",
+            "UMNP-437",
+            "UMNP-494",
+            "UMNP-493",
+            "UMNP-490",
+            "UMNP-489",
+            "UMNP-488",
+            "UMNP-483"
+        ],
+        "CHM": [
+            "CHM-1359",
+            "CHM-1298",
+            "CHM-1270",
+            "CHM-1216",
+            "CHM-1204",
+            "CHM-1203",
+            "CHM-1201",
+            "CHM-1199",
+            "CHM-1192"
+        ],
+        "UDB": [
+            "UDB-5674"
+        ],
+        "DMS": [
+            "DMS-1373",
+            "DMS-1371",
+            "DMS-1299",
+            "DMS-1277",
+            "DMS-1254",
+            "DMS-1244",
+            "DMS-1243",
+            "DMS-1242",
+            "DMS-1241",
+            "DMS-1235",
+            "DMS-1232",
+            "DMS-1231",
+            "DMS-1228",
+            "DMS-1227",
+            "DMS-1226"
+        ],
+        "APC": [
+            "APC-1413"
+        ],
+        "SSO": [
+            "SSO-14589",
+            "SSO-14575",
+            "SSO-14564",
+            "SSO-14563",
+            "SSO-14529",
+            "SSO-14525",
+            "SSO-14523",
+            "SSO-14520",
+            "SSO-14519",
+            "SSO-14518",
+            "SSO-14516",
+            "SSO-14490",
+            "SSO-14457",
+            "SSO-14425",
+            "SSO-14367",
+            "SSO-14366",
+            "SSO-13681",
+            "SSO-14594",
+            "SSO-14577",
+            "SSO-14575",
+            "SSO-14564",
+            "SSO-14563",
+            "SSO-14552",
+            "SSO-14529",
+            "SSO-14525",
+            "SSO-14523",
+            "SSO-14520",
+            "SSO-14519",
+            "SSO-14518",
+            "SSO-14516",
+            "SSO-14496",
+            "SSO-14490",
+            "SSO-14457",
+            "SSO-14425",
+            "SSO-14367",
+            "SSO-14366",
+            "SSO-14337",
+            "SSO-14336",
+            "SSO-13681"
+        ],
+        "LIS": [
+            "LIS-13552",
+            "LIS-13507",
+            "LIS-13503",
+            "LIS-13501"
+        ],
+        "GUS": [
+            "GUS-12359",
+            "GUS-12327",
+            "GUS-12356",
+            "GUS-12355"
+        ],
+        "CSM": [
+            "CSM-3579"
+        ],
+        "TUDS": [
+            "TUDS-2769",
+            "TUDS-2767",
+            "TUDS-2763",
+            "TUDS-2756",
+            "TUDS-2751",
+            "TUDS-2750",
+            "TUDS-2747",
+            "TUDS-2724",
+            "TUDS-2705",
+            "TUDS-2695",
+            "TUDS-2689",
+            "TUDS-2686",
+            "TUDS-2678",
+            "TUDS-2676",
+            "TUDS-2666",
+            "TUDS-2442",
+            "TUDS-2775",
+            "TUDS-2758",
+            "TUDS-2757",
+            "TUDS-2707",
+            "TUDS-2682",
+            "TUDS-2679",
+            "TUDS-2624",
+            "TUDS-2623",
+            "TUDS-2605",
+            "TUDS-2567",
+            "TUDS-2538",
+            "TUDS-2517",
+            "TUDS-2506",
+            "TUDS-2502",
+            "TUDS-2500",
+            "TUDS-2498",
+            "TUDS-2492",
+            "TUDS-2491",
+            "TUDS-2489",
+            "TUDS-2269",
+            "TUDS-1994",
+            "TUDS-1702",
+            "TUDS-2413",
+            "TUDS-2182",
+            "TUDS-2048",
+            "TUDS-2045",
+            "TUDS-2052",
+            "TUDS-1938",
+            "TUDS-1525",
+            "TUDS-1235",
+            "TUDS-2177",
+            "TUDS-2176",
+            "TUDS-2169",
+            "TUDS-2761",
+            "TUDS-2738",
+            "TUDS-2736",
+            "TUDS-2735",
+            "TUDS-2673",
+            "TUDS-2662",
+            "TUDS-2646",
+            "TUDS-2645",
+            "TUDS-2641",
+            "TUDS-2639",
+            "TUDS-2637",
+            "TUDS-2635",
+            "TUDS-2590",
+            "TUDS-2575",
+            "TUDS-2557",
+            "TUDS-2458",
+            "TUDS-2457",
+            "TUDS-2399",
+            "TUDS-2377",
+            "TUDS-2346",
+            "TUDS-2664",
+            "TUDS-2453",
+            "TUDS-2418",
+            "TUDS-2191",
+            "TUDS-2121",
+            "TUDS-1471",
+            "TUDS-2487",
+            "TUDS-2486",
+            "TUDS-2231",
+            "TUDS-2173",
+            "TUDS-2158",
+            "TUDS-2742",
+            "TUDS-1723",
+            "TUDS-1698",
+            "TUDS-1252",
+            "TUDS-2326",
+            "TUDS-2022",
+            "TUDS-2700",
+            "TUDS-2626",
+            "TUDS-2513",
+            "TUDS-2512",
+            "TUDS-2511",
+            "TUDS-1401",
+            "TUDS-2649",
+            "TUDS-2185",
+            "TUDS-1998"
+        ],
+        "PIC": [
+            "PIC-2405"
+        ],
+        "PSCPSC": [
+            "PSCPSC-25999"
+        ]
+    },
+    "clm_metrics": {
+        "clm_issues_count": 694,
+        "est_issues_count": 324,
+        "improvement_issues_count": 132,
+        "linked_issues_count": 1108,
+        "filtered_issues_count": 208,
+        "implementation_projects_count": 21,
+        "components_mapping": {
+            "LBF_ARH_UI": [],
+            "GUS_INV": [
+                "GUS"
+            ],
+            "DOC": [],
+            "CAM+CPM+CIA": [
+                "CPM"
+            ],
+            "LBF_DEVOPS": [],
+            "NUS": [
+                "NBSSPORTAL",
+                "NUS"
+            ],
+            "UNKNOWN": [],
+            "PAYS": [],
+            "ORION": [],
+            "RM_DOCS": [],
+            "NLM": [
+                "NLM"
+            ],
+            "RM_ARH": [],
+            "UNIGUI": [
+                "NBSSPORTAL"
+            ],
+            "MON": [],
+            "Perforator": [],
+            "UDB_INV": [
+                "UDB",
+                "SSO"
+            ],
+            "NWM_OCS": [
+                "NWMCCS"
+            ],
+            "LCCM+LIS": [
+                "LIS"
+            ],
+            "NBSS_TEST": [
+                "NBSSPORTAL"
+            ],
+            "APC_CSM": [
+                "CSM",
+                "APC"
+            ],
+            "MNP_INV": [
+                "UMNP"
+            ],
+            "UFM+LCM": [],
+            "PASS": [
+                "PASS"
+            ],
+            "DMS_INV": [
+                "DMS"
+            ],
+            "DOCS_BF": [],
+            "PSC": [
+                "PSCPSC"
+            ],
+            "PRAIM_INV": [
+                "CHM"
+            ],
+            "RM_DELIVERY": [],
+            "SSO+NGINX": [
+                "SSO"
+            ]
+        }
+    }
+}

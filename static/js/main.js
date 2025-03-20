@@ -6,17 +6,45 @@ document.addEventListener('DOMContentLoaded', function() {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
-    // Show appropriate fields based on selected method
+    // Data source selection handling
+    const sourceJiraRadio = document.getElementById('source-jira');
+    const sourceClmRadio = document.getElementById('source-clm');
+    const jiraSettings = document.getElementById('jira-settings');
+    const clmSettings = document.getElementById('clm-settings');
+
+    if (sourceJiraRadio && sourceClmRadio) {
+        sourceJiraRadio.addEventListener('change', function() {
+            if (this.checked) {
+                jiraSettings.classList.remove('d-none');
+                clmSettings.classList.add('d-none');
+            }
+        });
+
+        sourceClmRadio.addEventListener('change', function() {
+            if (this.checked) {
+                jiraSettings.classList.add('d-none');
+                clmSettings.classList.remove('d-none');
+            }
+        });
+    }
+
+    // Show appropriate fields based on selected method (Jira)
     const useFilterRadio = document.getElementById('use-filter');
     const useJqlRadio = document.getElementById('use-jql');
     const filterIdGroup = document.getElementById('filter-id-group');
     const jqlQueryGroup = document.getElementById('jql-query-group');
+
+    // Show appropriate fields based on selected method (CLM)
+    const clmFilterIdGroup = document.getElementById('clm-filter-id-group');
+    const clmJqlQueryGroup = document.getElementById('clm-jql-query-group');
 
     if (useFilterRadio && useJqlRadio) {
         useFilterRadio.addEventListener('change', function() {
             if (this.checked) {
                 filterIdGroup.classList.remove('d-none');
                 jqlQueryGroup.classList.add('d-none');
+                clmFilterIdGroup.classList.remove('d-none');
+                clmJqlQueryGroup.classList.add('d-none');
             }
         });
 
@@ -24,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.checked) {
                 filterIdGroup.classList.add('d-none');
                 jqlQueryGroup.classList.remove('d-none');
+                clmFilterIdGroup.classList.add('d-none');
+                clmJqlQueryGroup.classList.remove('d-none');
             }
         });
     }
@@ -135,5 +165,4 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('[data-analysis-running="true"]')) {
         setTimeout(refreshStatus, 1000);
     }
-    // Удалено автообновление страницы каждые 30 секунд
 });

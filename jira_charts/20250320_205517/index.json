@@ -1,0 +1,53 @@
+{
+    "timestamp": "20250320_205517",
+    "total_issues": 12,
+    "charts": {
+        "project_distribution": "jira_charts\\20250320_205517/project_distribution.png",
+        "comparison": "jira_charts\\20250320_205517/estimate_vs_spent_by_project.png",
+        "project_pie": "jira_charts\\20250320_205517/project_distribution_pie.png",
+        "efficiency": "jira_charts\\20250320_205517/efficiency_ratio_by_project.png",
+        "no_transitions_tasks": "jira_charts\\20250320_205517/no_transitions_tasks.png",
+        "open_tasks": "jira_charts\\20250320_205517/open_tasks_time_spent.png",
+        "completed_tasks_no_comments": "jira_charts\\20250320_205517/completed_tasks_no_comments.png",
+        "summary": "jira_charts\\20250320_205517/summary.json",
+        "clm_summary": "jira_charts\\20250320_205517/clm_summary.png"
+    },
+    "summary": {
+        "total_issues": 12,
+        "total_original_estimate_hours": 288.0,
+        "total_time_spent_hours": 300.5,
+        "projects_count": 2,
+        "projects": [
+            "SSO",
+            "CHM"
+        ],
+        "avg_estimate_per_issue": 24.0,
+        "avg_time_spent_per_issue": 25.041666666666668,
+        "overall_efficiency": 1.0434027777777777,
+        "no_transitions_tasks_count": 3,
+        "open_tasks_count": 3,
+        "open_tasks_time_spent_hours": 38.75,
+        "clm_issues_count": 1,
+        "est_issues_count": 7,
+        "improvement_issues_count": 3,
+        "linked_issues_count": 40,
+        "filtered_issues_count": 12,
+        "implementation_projects_count": 3,
+        "components_mapping": {
+            "UNIGUI": [],
+            "SSO+NGINX": [
+                "SSO"
+            ],
+            "PRAIM_INV": [],
+            "UDB_INV": [],
+            "NUS": []
+        }
+    },
+    "date_from": "2025-02-02",
+    "date_to": "2025-03-20",
+    "filter_id": null,
+    "jql_query": null,
+    "clm_filter_id": null,
+    "clm_jql_query": "issue=CLM-475731",
+    "data_source": "clm"
+}

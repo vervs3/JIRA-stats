@@ -107,44 +107,85 @@
     align-items: center;
 }
 
-/* Стили для контейнера фильтра */
+/* CLM specific styles */
+.badge.bg-info {
+    font-size: 0.8em;
+    font-weight: normal;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
 .chart-filter-container {
-    border-radius: 4px;
     margin-bottom: 15px;
 }
 
-/* Стили для списка опций фильтра */
-.project-filter-options {
+.chart-filter-container .project-filter-options {
     max-height: 200px;
     overflow-y: auto;
+    padding: 10px 15px;
     border: 1px solid #ddd;
-    padding: 10px;
     border-radius: 4px;
     background-color: #f8f9fa;
 }
 
-/* Стили для действий фильтра */
-.filter-actions {
-    gap: 5px;
+.chart-filter-container .filter-actions {
+    display: flex;
+    gap: 10px;
 }
 
-/* Стили для чекбоксов проектов */
-.project-filter-options .form-check {
+.chart-filter-container .form-check {
     margin-bottom: 5px;
 }
 
-/* Стили для чекбоксов */
-.project-checkbox {
-    cursor: pointer;
+/* Component to Project mapping table */
+.component-mapping-table {
+    font-size: 0.9em;
 }
 
-/* Стили для меток чекбоксов */
-.form-check-label {
-    cursor: pointer;
-    font-size: 0.9rem;
+.component-mapping-table th {
+    font-weight: 600;
+    background-color: #f1f8ff;
 }
 
-/* Стили для кнопки переключения фильтра */
-.toggle-filter-btn {
-    margin-bottom: 5px;
+.component-mapping-table .badge {
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+/* CLM Summary section */
+.clm-summary-card {
+    border: 1px solid #0dcaf0;
+    margin-bottom: 25px;
+}
+
+.clm-summary-card .card-header {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.clm-summary-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.clm-summary-item {
+    flex: 1 1 45%;
+    min-width: 200px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.clm-summary-item h6 {
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.clm-summary-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0dcaf0;
 }

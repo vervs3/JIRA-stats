@@ -1,0 +1,2682 @@
+[
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "3767661",
+    "self": "https://jira.nexign.com/rest/api/2/issue/3767661",
+    "key": "NBSSPORTAL-182",
+    "fields": {
+      "summary": "Разработка интерфейса для работы с комментариями. Этап 1",
+      "issuetype": {
+        "self": "https://jira.nexign.com/rest/api/2/issuetype/3",
+        "id": "3",
+        "description": "A task that needs to be done.",
+        "iconUrl": "https://jira.nexign.com/secure/viewavatar?size=xsmall&avatarId=21118&avatarType=issuetype",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 21118
+      },
+      "components": [],
+      "attachment": [],
+      "created": "2024-09-24T18:00:42.000+0300",
+      "timespent": 568800,
+      "timeoriginalestimate": 864000,
+      "project": {
+        "self": "https://jira.nexign.com/rest/api/2/project/36703",
+        "id": "36703",
+        "key": "NBSSPORTAL",
+        "name": "NBSS_PORTAL",
+        "projectTypeKey": "software",
+        "avatarUrls": {
+          "48x48": "https://jira.nexign.com/secure/projectavatar?avatarId=33003",
+          "24x24": "https://jira.nexign.com/secure/projectavatar?size=small&avatarId=33003",
+          "16x16": "https://jira.nexign.com/secure/projectavatar?size=xsmall&avatarId=33003",
+          "32x32": "https://jira.nexign.com/secure/projectavatar?size=medium&avatarId=33003"
+        },
+        "projectCategory": {
+          "self": "https://jira.nexign.com/rest/api/2/projectCategory/10800",
+          "id": "10800",
+          "description": "",
+          "name": "PS Products"
+        }
+      },
+      "comment": {
+        "comments": [],
+        "maxResults": 0,
+        "total": 0,
+        "startAt": 0
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 22,
+        "worklogs": [
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8708955",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NUS-2196",
+            "created": "2025-01-13T12:04:18.093+0300",
+            "updated": "2025-01-13T12:04:18.093+0300",
+            "started": "2025-01-09T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8708955",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8817486",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-02-13T11:50:18.393+0300",
+            "updated": "2025-02-13T11:50:18.393+0300",
+            "started": "2025-02-13T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8817486",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8826688",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-02-17T05:58:47.427+0300",
+            "updated": "2025-02-17T05:58:47.427+0300",
+            "started": "2025-02-14T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8826688",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8826689",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-02-17T05:58:51.427+0300",
+            "updated": "2025-02-17T05:58:51.427+0300",
+            "started": "2025-02-17T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8826689",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8840191",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+              "name": "Aleksandr.Lebedev",
+              "key": "JIRAUSER110198",
+              "emailAddress": "Aleksandr.Lebedev@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+              },
+              "displayName": "Lebedev, Aleksandr",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+              "name": "Aleksandr.Lebedev",
+              "key": "JIRAUSER110198",
+              "emailAddress": "Aleksandr.Lebedev@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+              },
+              "displayName": "Lebedev, Aleksandr",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-02-20T12:36:19.857+0300",
+            "updated": "2025-02-20T12:36:19.857+0300",
+            "started": "2025-02-18T00:00:00.000+0300",
+            "timeSpent": "4h",
+            "timeSpentSeconds": 14400,
+            "id": "8840191",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8849670",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-02-24T11:09:46.637+0300",
+            "updated": "2025-02-24T11:09:46.637+0300",
+            "started": "2025-02-18T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8849670",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8851294",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+              "name": "Aleksandr.Lebedev",
+              "key": "JIRAUSER110198",
+              "emailAddress": "Aleksandr.Lebedev@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+              },
+              "displayName": "Lebedev, Aleksandr",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+              "name": "Aleksandr.Lebedev",
+              "key": "JIRAUSER110198",
+              "emailAddress": "Aleksandr.Lebedev@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+              },
+              "displayName": "Lebedev, Aleksandr",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-02-24T13:58:02.567+0300",
+            "updated": "2025-02-24T13:58:02.567+0300",
+            "started": "2025-02-28T00:00:00.000+0300",
+            "timeSpent": "2h",
+            "timeSpentSeconds": 7200,
+            "id": "8851294",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8893837",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-07T07:15:02.143+0300",
+            "updated": "2025-03-07T07:15:02.143+0300",
+            "started": "2025-03-04T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8893837",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8893838",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-07T07:15:13.687+0300",
+            "updated": "2025-03-07T07:15:13.687+0300",
+            "started": "2025-03-05T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8893838",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8893839",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-07T07:15:17.297+0300",
+            "updated": "2025-03-07T07:15:17.297+0300",
+            "started": "2025-03-06T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8893839",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8893840",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-07T07:15:22.947+0300",
+            "updated": "2025-03-07T07:15:22.947+0300",
+            "started": "2025-03-07T00:00:00.000+0300",
+            "timeSpent": "7h",
+            "timeSpentSeconds": 25200,
+            "id": "8893840",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8900791",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-10T08:22:42.473+0300",
+            "updated": "2025-03-10T08:22:42.473+0300",
+            "started": "2025-03-10T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8900791",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8910073",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Kirill.Leskin",
+              "name": "Kirill.Leskin",
+              "key": "JIRAUSER105246",
+              "emailAddress": "Kirill.Leskin@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=JIRAUSER105246&avatarId=54318",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=JIRAUSER105246&avatarId=54318",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER105246&avatarId=54318",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=JIRAUSER105246&avatarId=54318"
+              },
+              "displayName": "Leskin, Kirill",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Kirill.Leskin",
+              "name": "Kirill.Leskin",
+              "key": "JIRAUSER105246",
+              "emailAddress": "Kirill.Leskin@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=JIRAUSER105246&avatarId=54318",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=JIRAUSER105246&avatarId=54318",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER105246&avatarId=54318",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=JIRAUSER105246&avatarId=54318"
+              },
+              "displayName": "Leskin, Kirill",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-12T14:36:52.720+0300",
+            "updated": "2025-03-12T14:36:52.720+0300",
+            "started": "2025-03-12T00:00:00.000+0300",
+            "timeSpent": "1h",
+            "timeSpentSeconds": 3600,
+            "id": "8910073",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8923532",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-17T08:07:19.133+0300",
+            "updated": "2025-03-17T08:07:19.133+0300",
+            "started": "2025-03-11T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8923532",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8923533",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-17T08:07:19.397+0300",
+            "updated": "2025-03-17T08:07:19.397+0300",
+            "started": "2025-03-12T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8923533",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8923534",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-17T08:07:19.617+0300",
+            "updated": "2025-03-17T08:07:19.617+0300",
+            "started": "2025-03-13T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8923534",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8923535",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-17T08:07:19.813+0300",
+            "updated": "2025-03-17T08:07:19.813+0300",
+            "started": "2025-03-14T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8923535",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8923536",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-17T08:07:20.017+0300",
+            "updated": "2025-03-17T08:07:20.017+0300",
+            "started": "2025-03-17T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8923536",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8928148",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-18T09:10:09.340+0300",
+            "updated": "2025-03-18T09:10:09.340+0300",
+            "started": "2025-03-18T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8928148",
+            "issueId": "3767661"
+          },
+          {
+            "self": "https://jira.nexign.com/rest/api/2/issue/3767661/worklog/8928149",
+            "author": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+              "name": "Alexey.Navros",
+              "key": "alexey.navros",
+              "emailAddress": "Alexey.Navros@nexign.com",
+              "avatarUrls": {
+                "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+                "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+                "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+                "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+              },
+              "displayName": "Navros, Alexey",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "Working on issue NBSSPORTAL-182",
+            "created": "2025-03-18T09:10:14.167+0300",
+            "updated": "2025-03-18T09:10:14.167+0300",
+            "started": "2025-03-19T00:00:00.000+0300",
+            "timeSpent": "1d",
+            "timeSpentSeconds": 28800,
+            "id": "8928149",
+            "issueId": "3767661"
+          }
+        ]
+      },
+      "status": {
+        "self": "https://jira.nexign.com/rest/api/2/status/10205",
+        "description": "",
+        "iconUrl": "https://jira.nexign.com/images/icons/status_generic.gif",
+        "name": "Dev",
+        "id": "10205",
+        "statusCategory": {
+          "self": "https://jira.nexign.com/rest/api/2/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      }
+    },
+    "changelog": {
+      "startAt": 0,
+      "maxResults": 48,
+      "total": 48,
+      "histories": [
+        {
+          "id": "50616833",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Stepan.Usov",
+            "name": "Stepan.Usov",
+            "key": "JIRAUSER94645",
+            "emailAddress": "Stepan.Usov@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Usov, Stepan",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-09-24T18:00:42.937+0300",
+          "items": [
+            {
+              "field": "Link",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "RMBSS-5315",
+              "toString": "This issue clones RMBSS-5315"
+            }
+          ]
+        },
+        {
+          "id": "50616837",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Stepan.Usov",
+            "name": "Stepan.Usov",
+            "key": "JIRAUSER94645",
+            "emailAddress": "Stepan.Usov@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Usov, Stepan",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-09-24T18:00:55.137+0300",
+          "items": [
+            {
+              "field": "Workflow",
+              "fieldtype": "jira",
+              "from": "4441147",
+              "fromString": "RTOBSCRM sub-task workflow",
+              "to": "4441148",
+              "toString": "RTOBSCRM task workflow"
+            },
+            {
+              "field": "Parent",
+              "fieldtype": "jira",
+              "from": "3544049",
+              "fromString": "RMBSS-2425",
+              "to": null,
+              "toString": null
+            },
+            {
+              "field": "issuetype",
+              "fieldtype": "jira",
+              "from": "5",
+              "fromString": "Sub-task",
+              "to": "3",
+              "toString": "Task"
+            }
+          ]
+        },
+        {
+          "id": "50616838",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Stepan.Usov",
+            "name": "Stepan.Usov",
+            "key": "JIRAUSER94645",
+            "emailAddress": "Stepan.Usov@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Usov, Stepan",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-09-24T18:00:55.167+0300",
+          "items": [
+            {
+              "field": "Epic Link",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "3486466",
+              "toString": "RMBSS-1914"
+            }
+          ]
+        },
+        {
+          "id": "50616843",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Stepan.Usov",
+            "name": "Stepan.Usov",
+            "key": "JIRAUSER94645",
+            "emailAddress": "Stepan.Usov@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Usov, Stepan",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-09-24T18:01:08.927+0300",
+          "items": [
+            {
+              "field": "project",
+              "fieldtype": "jira",
+              "from": "34700",
+              "fromString": "Revenue Management",
+              "to": "35500",
+              "toString": "NUS"
+            },
+            {
+              "field": "Key",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": "RMBSS-6229",
+              "to": null,
+              "toString": "NUS-1626"
+            },
+            {
+              "field": "Workflow",
+              "fieldtype": "jira",
+              "from": "4441148",
+              "fromString": "RTOBSCRM task workflow",
+              "to": "4441149",
+              "toString": "Internal Kanban Workflow"
+            },
+            {
+              "field": "Component",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "59930",
+              "toString": "NUS"
+            },
+            {
+              "field": "Component",
+              "fieldtype": "jira",
+              "from": "58026",
+              "fromString": "NUS",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "50616845",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Stepan.Usov",
+            "name": "Stepan.Usov",
+            "key": "JIRAUSER94645",
+            "emailAddress": "Stepan.Usov@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Usov, Stepan",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-09-24T18:01:18.987+0300",
+          "items": [
+            {
+              "field": "Link",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "RMBSS-5315",
+              "toString": "This issue is child of RMBSS-5315"
+            }
+          ]
+        },
+        {
+          "id": "50632982",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-09-25T13:43:11.197+0300",
+          "items": [
+            {
+              "field": "Start Date",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "2024-11-15",
+              "toString": "15.11.24"
+            }
+          ]
+        },
+        {
+          "id": "50744210",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Olga.Popova",
+            "name": "Olga.Popova",
+            "key": "olga.popova",
+            "emailAddress": "Olga.Popova@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=olga.popova&avatarId=23506",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=olga.popova&avatarId=23506",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=olga.popova&avatarId=23506",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=olga.popova&avatarId=23506"
+            },
+            "displayName": "Popova, Olga",
+            "active": true,
+            "timeZone": "Asia/Krasnoyarsk"
+          },
+          "created": "2024-09-30T23:02:37.673+0300",
+          "items": [
+            {
+              "field": "Link",
+              "fieldtype": "jira",
+              "from": "RMBSS-5315",
+              "fromString": "This issue clones RMBSS-5315",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "50744217",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Olga.Popova",
+            "name": "Olga.Popova",
+            "key": "olga.popova",
+            "emailAddress": "Olga.Popova@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=olga.popova&avatarId=23506",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=olga.popova&avatarId=23506",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=olga.popova&avatarId=23506",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=olga.popova&avatarId=23506"
+            },
+            "displayName": "Popova, Olga",
+            "active": true,
+            "timeZone": "Asia/Krasnoyarsk"
+          },
+          "created": "2024-09-30T23:02:45.200+0300",
+          "items": [
+            {
+              "field": "summary",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": "Разработка интерфейса для работы с комментариями",
+              "to": null,
+              "toString": "Разработка интерфейса для работы с комментариями. Этап 1"
+            }
+          ]
+        },
+        {
+          "id": "50766158",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-10-01T16:06:01.907+0300",
+          "items": [
+            {
+              "field": "labels",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": "Stage_3",
+              "to": null,
+              "toString": ""
+            }
+          ]
+        },
+        {
+          "id": "50766170",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-10-01T16:06:14.237+0300",
+          "items": [
+            {
+              "field": "Sprint",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "14638",
+              "toString": "NBSS 25Q1"
+            }
+          ]
+        },
+        {
+          "id": "52412875",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-12-23T10:59:52.833+0300",
+          "items": [
+            {
+              "field": "Start Date",
+              "fieldtype": "custom",
+              "from": "2024-11-15",
+              "fromString": "15.11.24",
+              "to": "2025-01-13",
+              "toString": "13.01.25"
+            },
+            {
+              "field": "End Date",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "2025-02-07",
+              "toString": "7.02.25"
+            }
+          ]
+        },
+        {
+          "id": "52512660",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-12-27T10:35:38.453+0300",
+          "items": [
+            {
+              "field": "assignee",
+              "fieldtype": "jira",
+              "from": "andrey.gitelson",
+              "fromString": "Gitelson, Andrey",
+              "to": "JIRAUSER111862",
+              "toString": "Ushakov, Dmitry"
+            }
+          ]
+        },
+        {
+          "id": "52512666",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-12-27T10:35:59.413+0300",
+          "items": [
+            {
+              "field": "Start Date",
+              "fieldtype": "custom",
+              "from": "2025-01-13",
+              "fromString": "13.01.25",
+              "to": "2025-02-01",
+              "toString": "1.02.25"
+            }
+          ]
+        },
+        {
+          "id": "52512672",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2024-12-27T10:36:11.057+0300",
+          "items": [
+            {
+              "field": "End Date",
+              "fieldtype": "custom",
+              "from": "2025-02-07",
+              "fromString": "7.02.25",
+              "to": "2025-02-21",
+              "toString": "21.02.25"
+            }
+          ]
+        },
+        {
+          "id": "52599894",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-01-09T13:13:49.667+0300",
+          "items": [
+            {
+              "field": "assignee",
+              "fieldtype": "jira",
+              "from": "JIRAUSER111862",
+              "fromString": "Ushakov, Dmitry",
+              "to": "alexey.navros",
+              "toString": "Navros, Alexey"
+            }
+          ]
+        },
+        {
+          "id": "52603603",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-01-09T14:12:55.023+0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "from": "1",
+              "fromString": "Open",
+              "to": "10205",
+              "toString": "Dev"
+            }
+          ]
+        },
+        {
+          "id": "52627158",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-01-10T14:12:39.487+0300",
+          "items": [
+            {
+              "field": "project",
+              "fieldtype": "jira",
+              "from": "35500",
+              "fromString": "NUS",
+              "to": "36703",
+              "toString": "NBSS_PORTAL"
+            },
+            {
+              "field": "Key",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": "NUS-1626",
+              "to": null,
+              "toString": "NBSSPORTAL-182"
+            },
+            {
+              "field": "Component",
+              "fieldtype": "jira",
+              "from": "59930",
+              "fromString": "NUS",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "52655023",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-01-13T12:04:18.097+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "864000",
+              "fromString": "864000",
+              "to": "835200",
+              "toString": "835200"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "28800",
+              "toString": "28800"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8708955",
+              "fromString": "8708955",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53021533",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-01-30T18:33:31.667+0300",
+          "items": [
+            {
+              "field": "Fix Version",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "63875",
+              "toString": "1.0.0"
+            }
+          ]
+        },
+        {
+          "id": "53143420",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-06T11:44:15.807+0300",
+          "items": [
+            {
+              "field": "Start Date",
+              "fieldtype": "custom",
+              "from": "2025-02-01",
+              "fromString": "1.02.25",
+              "to": "2025-02-12",
+              "toString": "12.02.25"
+            }
+          ]
+        },
+        {
+          "id": "53143421",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Andrey.Gitelson",
+            "name": "Andrey.Gitelson",
+            "key": "andrey.gitelson",
+            "emailAddress": "Andrey.Gitelson@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=andrey.gitelson&avatarId=43000",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=andrey.gitelson&avatarId=43000",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=andrey.gitelson&avatarId=43000",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=andrey.gitelson&avatarId=43000"
+            },
+            "displayName": "Gitelson, Andrey [X]",
+            "active": false,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-06T11:44:32.980+0300",
+          "items": [
+            {
+              "field": "End Date",
+              "fieldtype": "custom",
+              "from": "2025-02-21",
+              "fromString": "21.02.25",
+              "to": "2025-03-19",
+              "toString": "19.03.25"
+            }
+          ]
+        },
+        {
+          "id": "53272078",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-13T11:50:18.400+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "835200",
+              "fromString": "835200",
+              "to": "806400",
+              "toString": "806400"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "28800",
+              "fromString": "28800",
+              "to": "57600",
+              "toString": "57600"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8817486",
+              "fromString": "8817486",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53329873",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-17T05:58:47.430+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "806400",
+              "fromString": "806400",
+              "to": "777600",
+              "toString": "777600"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "57600",
+              "fromString": "57600",
+              "to": "86400",
+              "toString": "86400"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8826688",
+              "fromString": "8826688",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53329874",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-17T05:58:51.433+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "777600",
+              "fromString": "777600",
+              "to": "748800",
+              "toString": "748800"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "86400",
+              "fromString": "86400",
+              "to": "115200",
+              "toString": "115200"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8826689",
+              "fromString": "8826689",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53340650",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+            "name": "Aleksandr.Lebedev",
+            "key": "JIRAUSER110198",
+            "emailAddress": "Aleksandr.Lebedev@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Lebedev, Aleksandr",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-17T12:46:14.037+0300",
+          "items": [
+            {
+              "field": "Реализует CLM",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": null,
+              "toString": "CLM-475684"
+            }
+          ]
+        },
+        {
+          "id": "53400508",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+            "name": "Aleksandr.Lebedev",
+            "key": "JIRAUSER110198",
+            "emailAddress": "Aleksandr.Lebedev@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Lebedev, Aleksandr",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-20T12:36:19.860+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "748800",
+              "fromString": "748800",
+              "to": "734400",
+              "toString": "734400"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "115200",
+              "fromString": "115200",
+              "to": "129600",
+              "toString": "129600"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8840191",
+              "fromString": "8840191",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53441047",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-24T11:09:46.640+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "734400",
+              "fromString": "734400",
+              "to": "705600",
+              "toString": "705600"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "129600",
+              "fromString": "129600",
+              "to": "158400",
+              "toString": "158400"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8849670",
+              "fromString": "8849670",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53450160",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+            "name": "Aleksandr.Lebedev",
+            "key": "JIRAUSER110198",
+            "emailAddress": "Aleksandr.Lebedev@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Lebedev, Aleksandr",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-02-24T13:58:02.577+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "705600",
+              "fromString": "705600",
+              "to": "698400",
+              "toString": "698400"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "158400",
+              "fromString": "158400",
+              "to": "165600",
+              "toString": "165600"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8851294",
+              "fromString": "8851294",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53685008",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Aleksandr.Lebedev",
+            "name": "Aleksandr.Lebedev",
+            "key": "JIRAUSER110198",
+            "emailAddress": "Aleksandr.Lebedev@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Lebedev, Aleksandr",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-06T19:08:28.073+0300",
+          "items": [
+            {
+              "field": "Link",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "NBSSPORTAL-438",
+              "toString": "This issue realizes NBSSPORTAL-438"
+            }
+          ]
+        },
+        {
+          "id": "53688547",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-07T07:15:02.150+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "698400",
+              "fromString": "698400",
+              "to": "669600",
+              "toString": "669600"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "165600",
+              "fromString": "165600",
+              "to": "194400",
+              "toString": "194400"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8893837",
+              "fromString": "8893837",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53688549",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-07T07:15:13.690+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "669600",
+              "fromString": "669600",
+              "to": "640800",
+              "toString": "640800"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "194400",
+              "fromString": "194400",
+              "to": "223200",
+              "toString": "223200"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8893838",
+              "fromString": "8893838",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53688550",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-07T07:15:17.303+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "640800",
+              "fromString": "640800",
+              "to": "612000",
+              "toString": "612000"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "223200",
+              "fromString": "223200",
+              "to": "252000",
+              "toString": "252000"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8893839",
+              "fromString": "8893839",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53688551",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-07T07:15:22.950+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "612000",
+              "fromString": "612000",
+              "to": "586800",
+              "toString": "586800"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "252000",
+              "fromString": "252000",
+              "to": "277200",
+              "toString": "277200"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8893840",
+              "fromString": "8893840",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53709042",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Vladimir.Veremey",
+            "name": "Vladimir.Veremey",
+            "key": "JIRAUSER104301",
+            "emailAddress": "Vladimir.Veremey@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Veremey, Vladimir",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-07T18:50:33.970+0300",
+          "items": [
+            {
+              "field": "duedate",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "2025-03-19",
+              "toString": "2025-03-19 00:00:00.0"
+            }
+          ]
+        },
+        {
+          "id": "53719743",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-10T08:22:42.480+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "586800",
+              "fromString": "586800",
+              "to": "558000",
+              "toString": "558000"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "277200",
+              "fromString": "277200",
+              "to": "306000",
+              "toString": "306000"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8900791",
+              "fromString": "8900791",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53777808",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Kirill.Leskin",
+            "name": "Kirill.Leskin",
+            "key": "JIRAUSER105246",
+            "emailAddress": "Kirill.Leskin@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=JIRAUSER105246&avatarId=54318",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=JIRAUSER105246&avatarId=54318",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER105246&avatarId=54318",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=JIRAUSER105246&avatarId=54318"
+            },
+            "displayName": "Leskin, Kirill",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-12T14:36:52.723+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "558000",
+              "fromString": "558000",
+              "to": "554400",
+              "toString": "554400"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "306000",
+              "fromString": "306000",
+              "to": "309600",
+              "toString": "309600"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8910073",
+              "fromString": "8910073",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53852679",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-17T08:07:19.137+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "554400",
+              "fromString": "554400",
+              "to": "410400",
+              "toString": "410400"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "309600",
+              "fromString": "309600",
+              "to": "338400",
+              "toString": "338400"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8923532",
+              "fromString": "8923532",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53852680",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-17T08:07:19.400+0300",
+          "items": [
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "338400",
+              "fromString": "338400",
+              "to": "367200",
+              "toString": "367200"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8923533",
+              "fromString": "8923533",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53852681",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-17T08:07:19.637+0300",
+          "items": [
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "367200",
+              "fromString": "367200",
+              "to": "396000",
+              "toString": "396000"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8923534",
+              "fromString": "8923534",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53852682",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-17T08:07:19.817+0300",
+          "items": [
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "396000",
+              "fromString": "396000",
+              "to": "424800",
+              "toString": "424800"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8923535",
+              "fromString": "8923535",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53852683",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-17T08:07:20.020+0300",
+          "items": [
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "424800",
+              "fromString": "424800",
+              "to": "453600",
+              "toString": "453600"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8923536",
+              "fromString": "8923536",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53883346",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-18T09:10:09.347+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "410400",
+              "fromString": "410400",
+              "to": "381600",
+              "toString": "381600"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "453600",
+              "fromString": "453600",
+              "to": "482400",
+              "toString": "482400"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8928148",
+              "fromString": "8928148",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53883371",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-18T09:10:14.177+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "381600",
+              "fromString": "381600",
+              "to": "352800",
+              "toString": "352800"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "482400",
+              "fromString": "482400",
+              "to": "511200",
+              "toString": "511200"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8928149",
+              "fromString": "8928149",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53996935",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-20T11:53:07.990+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "352800",
+              "fromString": "352800",
+              "to": "324000",
+              "toString": "324000"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "511200",
+              "fromString": "511200",
+              "to": "540000",
+              "toString": "540000"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8937001",
+              "fromString": "8937001",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53996943",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-20T11:53:14.300+0300",
+          "items": [
+            {
+              "field": "timeestimate",
+              "fieldtype": "jira",
+              "from": "324000",
+              "fromString": "324000",
+              "to": "295200",
+              "toString": "295200"
+            },
+            {
+              "field": "timespent",
+              "fieldtype": "jira",
+              "from": "540000",
+              "fromString": "540000",
+              "to": "568800",
+              "toString": "568800"
+            },
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8937004",
+              "fromString": "8937004",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53996957",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=Alexey.Navros",
+            "name": "Alexey.Navros",
+            "key": "alexey.navros",
+            "emailAddress": "Alexey.Navros@nexign.com",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?ownerId=alexey.navros&avatarId=23505",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&ownerId=alexey.navros&avatarId=23505",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&ownerId=alexey.navros&avatarId=23505",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&ownerId=alexey.navros&avatarId=23505"
+            },
+            "displayName": "Navros, Alexey",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-20T11:53:42.130+0300",
+          "items": [
+            {
+              "field": "WorklogId",
+              "fieldtype": "jira",
+              "from": "8937001",
+              "fromString": "8937001",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "53996994",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=gitlab_user",
+            "name": "gitlab_user",
+            "key": "JIRAUSER94686",
+            "emailAddress": "",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "gitlab_user",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-20T11:54:49.467+0300",
+          "items": [
+            {
+              "field": "RemoteIssueLink",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "1781881",
+              "toString": "This issue links to \"Merge request - Draft: Resolve NBSSPORTAL-182 \"Feature/\" (Web Link)\""
+            }
+          ]
+        },
+        {
+          "id": "54000235",
+          "author": {
+            "self": "https://jira.nexign.com/rest/api/2/user?username=gitlab_user",
+            "name": "gitlab_user",
+            "key": "JIRAUSER94686",
+            "emailAddress": "",
+            "avatarUrls": {
+              "48x48": "https://jira.nexign.com/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.nexign.com/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.nexign.com/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.nexign.com/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "gitlab_user",
+            "active": true,
+            "timeZone": "Europe/Moscow"
+          },
+          "created": "2025-03-20T13:12:39.867+0300",
+          "items": [
+            {
+              "field": "RemoteIssueLink",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "1782045",
+              "toString": "This issue links to \"Merge request - Resolve NBSSPORTAL-182 \"Feature/\" (Web Link)\""
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -19,7 +19,11 @@ metrics_tooltips = {
     'avg_estimate_per_issue': 'Средняя оценка времени на одну задачу в часах',
     'avg_time_spent_per_issue': 'Среднее фактически затраченное время на одну задачу в часах',
     'overall_efficiency': 'Отношение затраченного времени к оценке (Коэффициент > 1 означает превышение оценки)',
-    'no_transitions_tasks_count': 'Количество задач, которые никогда не меняли статус (вероятно все еще новые задачи)'
+    'no_transitions_tasks_count': 'Количество задач, которые никогда не меняли статус (вероятно все еще новые задачи)',
+    'clm_issues_count': 'Количество найденных тикетов CLM',
+    'est_issues_count': 'Количество связанных тикетов EST',
+    'improvement_issues_count': 'Количество тикетов типа "Improvement from CLM"',
+    'linked_issues_count': 'Общее количество связанных задач'
 }
 
 
@@ -32,9 +36,11 @@ def register_analysis_routes(app):
         if analysis_state['is_running']:
             return redirect(url_for('index'))
 
+        # Get data source (jira or clm)
+        data_source = request.form.get('data_source', 'jira')
+
+        # Common parameters
         use_filter = request.form.get('use_filter') == 'yes'
-        filter_id = request.form.get('filter_id', '114476')
-        jql_query = request.form.get('jql_query', '')
         date_from = request.form.get('date_from', '')
         date_to = request.form.get('date_to', '')
 
@@ -42,10 +48,24 @@ def register_analysis_routes(app):
         date_from = date_from if date_from else None
         date_to = date_to if date_to else None
 
+        # Source-specific parameters
+        if data_source == 'jira':
+            # Standard Jira analysis
+            filter_id = request.form.get('filter_id', '114476')
+            jql_query = request.form.get('jql_query', '')
+            clm_filter_id = None
+            clm_jql_query = None
+        else:
+            # CLM analysis
+            filter_id = None
+            jql_query = None
+            clm_filter_id = request.form.get('clm_filter_id', '114473')
+            clm_jql_query = request.form.get('clm_jql_query', '')
+
         # Start analysis in a separate thread
         analysis_thread = threading.Thread(
             target=run_analysis,
-            args=(use_filter, filter_id, jql_query, date_from, date_to)
+            args=(data_source, use_filter, filter_id, jql_query, date_from, date_to, clm_filter_id, clm_jql_query)
         )
         analysis_thread.daemon = True
         analysis_thread.start()
@@ -132,6 +152,8 @@ def register_analysis_routes(app):
                     chart_type = 'comparison'
                 elif 'efficiency_ratio' in filename:
                     chart_type = 'efficiency'
+                elif 'clm_summary' in filename:
+                    chart_type = 'clm_summary'
 
                 # Add chart only if type is determined and not already added
                 if chart_type and chart_type not in chart_files:
@@ -185,6 +207,17 @@ def register_analysis_routes(app):
                 except Exception as e:
                     logger.error(f"Error loading no transitions tasks metrics: {e}")
 
+            # Check for CLM metrics
+            clm_metrics = os.path.join(metrics_dir, 'clm_metrics.json')
+            if os.path.exists(clm_metrics):
+                try:
+                    with open(clm_metrics, 'r', encoding='utf-8') as f:
+                        clm_data = json.load(f)
+                        for key, value in clm_data.items():
+                            summary_data[key] = value
+                except Exception as e:
+                    logger.error(f"Error loading CLM metrics: {e}")
+
         # Load index file if available
         index_data = {}
         index_file = os.path.join(folder_path, 'index.json')
@@ -220,6 +253,9 @@ def register_analysis_routes(app):
             'date_to': index_data.get('date_to'),
             'filter_id': index_data.get('filter_id'),
             'jql_query': index_data.get('jql_query'),
+            'clm_filter_id': index_data.get('clm_filter_id'),
+            'clm_jql_query': index_data.get('clm_jql_query'),
+            'data_source': index_data.get('data_source', 'jira'),
             'chart_data': chart_data,
             'tooltips': metrics_tooltips
         }

@@ -1,0 +1,25 @@
+{
+    "clm_issues_count": 1,
+    "est_issues_count": 7,
+    "improvement_issues_count": 3,
+    "linked_issues_count": 40,
+    "filtered_issues_count": 12,
+    "implementation_projects_count": 3,
+    "components_mapping": {
+        "UDB_INV": [
+            "SSO"
+        ],
+        "SSO+NGINX": [
+            "SSO"
+        ],
+        "PRAIM_INV": [
+            "CHM"
+        ],
+        "NUS": [
+            "NBSSPORTAL"
+        ],
+        "UNIGUI": [
+            "NBSSPORTAL"
+        ]
+    }
+}

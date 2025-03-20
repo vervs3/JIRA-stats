@@ -1,0 +1,89 @@
+{
+    "project_counts": {
+        "CHM": 11,
+        "SSO": 1
+    },
+    "project_estimates": {
+        "CHM": 248.0,
+        "SSO": 40.0
+    },
+    "project_time_spent": {
+        "CHM": 283.75,
+        "SSO": 16.75
+    },
+    "projects": [
+        "SSO",
+        "CHM"
+    ],
+    "data_source": "clm",
+    "filter_params": {
+        "filter_id": null,
+        "jql": null,
+        "clm_filter_id": null,
+        "clm_jql": "issue=CLM-475731",
+        "date_from": "2025-02-02",
+        "date_to": "2025-03-20"
+    },
+    "special_charts": {
+        "no_transitions": {
+            "title": "Открытые задачи со списаниями",
+            "by_project": {
+                "CHM": 2,
+                "SSO": 1
+            },
+            "total": 3,
+            "issue_keys_by_project": {
+                "CHM": [
+                    "CHM-1264",
+                    "CHM-1199"
+                ],
+                "SSO": [
+                    "SSO-14589"
+                ]
+            }
+        }
+    },
+    "project_issue_mapping": {
+        "SSO": [
+            "SSO-14589"
+        ],
+        "CHM": [
+            "CHM-1359",
+            "CHM-1298",
+            "CHM-1270",
+            "CHM-1264",
+            "CHM-1216",
+            "CHM-1204",
+            "CHM-1203",
+            "CHM-1201",
+            "CHM-1199",
+            "CHM-1192",
+            "CHM-1191"
+        ]
+    },
+    "clm_metrics": {
+        "clm_issues_count": 1,
+        "est_issues_count": 7,
+        "improvement_issues_count": 3,
+        "linked_issues_count": 40,
+        "filtered_issues_count": 12,
+        "implementation_projects_count": 3,
+        "components_mapping": {
+            "UDB_INV": [
+                "SSO"
+            ],
+            "SSO+NGINX": [
+                "SSO"
+            ],
+            "PRAIM_INV": [
+                "CHM"
+            ],
+            "NUS": [
+                "NBSSPORTAL"
+            ],
+            "UNIGUI": [
+                "NBSSPORTAL"
+            ]
+        }
+    }
+}

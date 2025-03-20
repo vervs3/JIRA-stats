@@ -1,0 +1,14 @@
+{
+  "count": 2,
+  "total_time_spent": 33.0,
+  "by_project": {
+    "NBSSPORTAL": 33.0
+  },
+  "task_statuses": {
+    "Open": 2
+  },
+  "sample_tasks": [
+    "NBSSPORTAL-427",
+    "NBSSPORTAL-417"
+  ]
+}

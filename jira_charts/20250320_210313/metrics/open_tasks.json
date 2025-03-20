@@ -1,0 +1,16 @@
+{
+  "count": 3,
+  "total_time_spent": 38.75,
+  "by_project": {
+    "CHM": 22.0,
+    "SSO": 16.75
+  },
+  "task_statuses": {
+    "Open": 3
+  },
+  "sample_tasks": [
+    "SSO-14589",
+    "CHM-1264",
+    "CHM-1199"
+  ]
+}

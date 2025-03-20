@@ -1,0 +1,24 @@
+{
+  "count": 26,
+  "total_time_spent": 771.5,
+  "by_project": {
+    "CHM": 107.75,
+    "NBSSPORTAL": 553.0,
+    "SSO": 110.75
+  },
+  "task_statuses": {
+    "Open": 26
+  },
+  "sample_tasks": [
+    "NBSSPORTAL-480",
+    "NBSSPORTAL-458",
+    "NBSSPORTAL-435",
+    "NBSSPORTAL-427",
+    "NBSSPORTAL-417",
+    "NBSSPORTAL-180",
+    "NBSSPORTAL-149",
+    "NBSSPORTAL-41",
+    "SSO-14597",
+    "SSO-14594"
+  ]
+}

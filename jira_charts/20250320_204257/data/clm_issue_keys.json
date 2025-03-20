@@ -1,0 +1,146 @@
+{
+    "clm_issue_keys": [
+        "CLM-475731"
+    ],
+    "est_issue_keys": [
+        "EST-61012",
+        "EST-61004",
+        "EST-61003",
+        "EST-60046",
+        "EST-59464",
+        "EST-59202",
+        "EST-58888"
+    ],
+    "improvement_issue_keys": [
+        "SSO-14554",
+        "NBSSPORTAL-297",
+        "CHM-1260"
+    ],
+    "implementation_issue_keys": [
+        "SSO-14588",
+        "NBSSPORTAL-298",
+        "CHM-1183",
+        "SSO-14591",
+        "SSO-14590",
+        "SSO-14589",
+        "CHM-1369",
+        "CHM-1368",
+        "CHM-1359",
+        "CHM-1357",
+        "CHM-1332",
+        "CHM-1325",
+        "CHM-1298",
+        "CHM-1270",
+        "CHM-1269",
+        "CHM-1268",
+        "CHM-1267",
+        "CHM-1266",
+        "CHM-1265",
+        "CHM-1264",
+        "CHM-1263",
+        "CHM-1262",
+        "CHM-1261",
+        "CHM-1216",
+        "CHM-1211",
+        "CHM-1210",
+        "CHM-1209",
+        "CHM-1208",
+        "CHM-1207",
+        "CHM-1206",
+        "CHM-1205",
+        "CHM-1204",
+        "CHM-1203",
+        "CHM-1202",
+        "CHM-1201",
+        "CHM-1199",
+        "CHM-1198",
+        "CHM-1193",
+        "CHM-1192",
+        "CHM-1191"
+    ],
+    "filtered_issue_keys": [
+        "SSO-14589",
+        "CHM-1359",
+        "CHM-1298",
+        "CHM-1270",
+        "CHM-1264",
+        "CHM-1216",
+        "CHM-1204",
+        "CHM-1203",
+        "CHM-1201",
+        "CHM-1199",
+        "CHM-1192",
+        "CHM-1191"
+    ],
+    "open_tasks_issue_keys": [
+        "SSO-14589",
+        "CHM-1264",
+        "CHM-1199"
+    ],
+    "project_issue_mapping": {
+        "SSO": [
+            "SSO-14589"
+        ],
+        "CHM": [
+            "CHM-1359",
+            "CHM-1298",
+            "CHM-1270",
+            "CHM-1264",
+            "CHM-1216",
+            "CHM-1204",
+            "CHM-1203",
+            "CHM-1201",
+            "CHM-1199",
+            "CHM-1192",
+            "CHM-1191"
+        ]
+    },
+    "project_implementation_mapping": {
+        "SSO": [
+            "SSO-14588",
+            "SSO-14591",
+            "SSO-14590",
+            "SSO-14589"
+        ],
+        "NBSSPORTAL": [
+            "NBSSPORTAL-298"
+        ],
+        "CHM": [
+            "CHM-1183",
+            "CHM-1369",
+            "CHM-1368",
+            "CHM-1359",
+            "CHM-1357",
+            "CHM-1332",
+            "CHM-1325",
+            "CHM-1298",
+            "CHM-1270",
+            "CHM-1269",
+            "CHM-1268",
+            "CHM-1267",
+            "CHM-1266",
+            "CHM-1265",
+            "CHM-1264",
+            "CHM-1263",
+            "CHM-1262",
+            "CHM-1261",
+            "CHM-1216",
+            "CHM-1211",
+            "CHM-1210",
+            "CHM-1209",
+            "CHM-1208",
+            "CHM-1207",
+            "CHM-1206",
+            "CHM-1205",
+            "CHM-1204",
+            "CHM-1203",
+            "CHM-1202",
+            "CHM-1201",
+            "CHM-1199",
+            "CHM-1198",
+            "CHM-1193",
+            "CHM-1192",
+            "CHM-1191"
+        ]
+    }
+}

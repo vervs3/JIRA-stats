@@ -1,0 +1,53 @@
+{
+    "clm_issues_count": 694,
+    "est_issues_count": 324,
+    "improvement_issues_count": 132,
+    "linked_issues_count": 162,
+    "filtered_issues_count": 635,
+    "implementation_projects_count": 18,
+    "components_mapping": {
+        "PSC": [
+            "PSCPSC"
+        ],
+        "PASS": [
+            "PASS"
+        ],
+        "APC_CSM": [
+            "APC",
+            "CSM"
+        ],
+        "UDB_INV": [
+            "UDB"
+        ],
+        "LCCM+LIS": [
+            "LIS"
+        ],
+        "GUS_INV": [
+            "GUS"
+        ],
+        "DMS_INV": [
+            "DMS"
+        ],
+        "NLM": [
+            "NLM"
+        ],
+        "MNP_INV": [
+            "UMNP"
+        ],
+        "UNIGUI": [
+            "UNIBLP"
+        ],
+        "CAM+CPM+CIA": [
+            "CPM"
+        ],
+        "NWM_OCS": [
+            "NWMCCS"
+        ],
+        "SSO+NGINX": [
+            "SSO"
+        ],
+        "NBSS_TEST": [
+            "NBSSPORTAL"
+        ]
+    }
+}

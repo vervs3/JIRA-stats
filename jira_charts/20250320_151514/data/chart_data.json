@@ -1,0 +1,169 @@
+{
+    "project_counts": {
+        "CSM": 318,
+        "TUDS": 224,
+        "PSCPSC": 152,
+        "SSO": 133,
+        "CPM": 132,
+        "NBSSPORTAL": 74,
+        "CHM": 59,
+        "LIS": 57,
+        "GUS": 52,
+        "UDB": 48,
+        "PASS": 47,
+        "APC": 41,
+        "DMS": 29,
+        "NWMCCS": 23,
+        "UMNP": 22,
+        "PIC": 14,
+        "UNIBLP": 13,
+        "NLM": 2
+    },
+    "project_estimates": {
+        "APC": 311.0,
+        "CHM": 790.0,
+        "CPM": 1395.0,
+        "CSM": 4074.5,
+        "DMS": 3488.0,
+        "GUS": 1832.0,
+        "LIS": 600.0,
+        "NBSSPORTAL": 3304.0,
+        "NLM": 32.0,
+        "NWMCCS": 616.0,
+        "PASS": 1616.0,
+        "PIC": 0.0,
+        "PSCPSC": 2778.0,
+        "SSO": 1689.0,
+        "TUDS": 7972.0,
+        "UDB": 592.0,
+        "UMNP": 160.0,
+        "UNIBLP": 0.0
+    },
+    "project_time_spent": {
+        "APC": 1277.5,
+        "CHM": 974.5,
+        "CPM": 1883.0,
+        "CSM": 5437.6,
+        "DMS": 4279.9,
+        "GUS": 2627.5,
+        "LIS": 987.6666666666666,
+        "NBSSPORTAL": 3688.0,
+        "NLM": 27.0,
+        "NWMCCS": 845.4166666666667,
+        "PASS": 1882.0,
+        "PIC": 906.5,
+        "PSCPSC": 6481.983333333334,
+        "SSO": 1852.0833333333333,
+        "TUDS": 11833.5,
+        "UDB": 1180.4,
+        "UMNP": 1020.25,
+        "UNIBLP": 242.75
+    },
+    "projects": [
+        "PSCPSC",
+        "PASS",
+        "NWMCCS",
+        "CSM",
+        "GUS",
+        "UNIBLP",
+        "NLM",
+        "PIC",
+        "CPM",
+        "UDB",
+        "APC",
+        "NBSSPORTAL",
+        "UMNP",
+        "SSO",
+        "DMS",
+        "LIS",
+        "CHM",
+        "TUDS"
+    ],
+    "data_source": "clm",
+    "filter_params": {
+        "filter_id": null,
+        "jql": null,
+        "clm_filter_id": "114473",
+        "clm_jql": null,
+        "date_from": "2025-02-18",
+        "date_to": "2025-03-20"
+    },
+    "special_charts": {
+        "no_transitions": {
+            "title": "Открытые задачи со списаниями",
+            "by_project": {
+                "APC": 3,
+                "CHM": 5,
+                "CPM": 25,
+                "CSM": 19,
+                "DMS": 12,
+                "GUS": 9,
+                "LIS": 11,
+                "NBSSPORTAL": 7,
+                "NWMCCS": 6,
+                "PASS": 2,
+                "PIC": 4,
+                "PSCPSC": 16,
+                "SSO": 13,
+                "TUDS": 67,
+                "UDB": 4,
+                "UMNP": 8,
+                "UNIBLP": 4
+            },
+            "total": 215
+        }
+    },
+    "clm_metrics": {
+        "clm_issues_count": 694,
+        "est_issues_count": 324,
+        "improvement_issues_count": 132,
+        "linked_issues_count": 162,
+        "filtered_issues_count": 1440,
+        "implementation_projects_count": 18,
+        "components_mapping": {
+            "DMS_INV": [
+                "DMS"
+            ],
+            "PASS": [
+                "PASS"
+            ],
+            "NWM_OCS": [
+                "NWMCCS"
+            ],
+            "UDB_INV": [
+                "UDB"
+            ],
+            "MNP_INV": [
+                "UMNP"
+            ],
+            "NLM": [
+                "NLM"
+            ],
+            "CAM+CPM+CIA": [
+                "CPM"
+            ],
+            "LCCM+LIS": [
+                "LIS"
+            ],
+            "APC_CSM": [
+                "CSM",
+                "APC"
+            ],
+            "NBSS_TEST": [
+                "NBSSPORTAL"
+            ],
+            "SSO+NGINX": [
+                "SSO"
+            ],
+            "GUS_INV": [
+                "GUS"
+            ],
+            "UNIGUI": [
+                "UNIBLP"
+            ],
+            "PSC": [
+                "PSCPSC"
+            ]
+        }
+    }
+}
